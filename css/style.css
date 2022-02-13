@@ -1,0 +1,28 @@
+/* line 1, sass/base/_reset.scss */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Mono", monospace; }
+
+/* line 5, sass/base/_reset.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* line 10, sass/base/_reset.scss */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+/* line 14, sass/base/_reset.scss */
+a {
+  text-decoration: none; }
+
+/* line 17, sass/base/_reset.scss */
+li {
+  list-style: none; }
+
+/* line 20, sass/base/_reset.scss */
+.container {
+  width: 80%;
+  margin: 0 auto; }
