@@ -1,3 +1,21 @@
+/* line 1, sass/layout/_grid.scss */
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem; }
+
+/* line 7, sass/layout/_grid.scss */
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem; }
+
+/* line 12, sass/layout/_grid.scss */
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem; }
+
 /* line 1, sass/base/_reset.scss */
 body {
   font-family: "Montserrat", sans-serif;
@@ -66,6 +84,64 @@ header {
   display: block;
   margin: 0 auto; }
 
+/* line 2, sass/base/typography.scss */
+.section__flow-box {
+  padding-top: 1.5rem; }
+  /* line 5, sass/base/typography.scss */
+  .section__flow-box--img img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 90%; }
+  /* line 12, sass/base/typography.scss */
+  .section__flow-box--description {
+    margin-top: 8rem;
+    color: #fff; }
+
+/* line 17, sass/base/typography.scss */
+.section__flow--description {
+  width: 100%; }
+  /* line 19, sass/base/typography.scss */
+  .section__flow--description p {
+    line-height: 1.5;
+    margin-top: 2rem; }
+
+/* line 26, sass/base/typography.scss */
+.section__listen--description {
+  color: #fff; }
+  /* line 28, sass/base/typography.scss */
+  .section__listen--description h3 {
+    padding-top: 10rem;
+    font-size: 2.4rem; }
+  /* line 32, sass/base/typography.scss */
+  .section__listen--description p {
+    width: 50%;
+    margin-top: 3rem;
+    line-height: 1.5;
+    font-size: 1.4rem; }
+
+/* line 41, sass/base/typography.scss */
+.section__find-box {
+  padding-top: 5rem; }
+  /* line 43, sass/base/typography.scss */
+  .section__find-box--description {
+    color: #fff; }
+    /* line 45, sass/base/typography.scss */
+    .section__find-box--description h3 {
+      margin-top: 8rem;
+      font-size: 2rem; }
+    /* line 49, sass/base/typography.scss */
+    .section__find-box--description p {
+      font-size: 1.3rem;
+      line-height: 2;
+      margin-top: 2rem; }
+  /* line 56, sass/base/typography.scss */
+  .section__find-box--img img {
+    display: block;
+    margin: 0 auto;
+    width: 20rem;
+    height: 30rem; }
+
 /* line 2, sass/pages/_landing.scss */
 .section__flow {
   width: 95vw;
@@ -73,26 +149,22 @@ header {
   background-color: #161a1a;
   display: block;
   margin: 0 auto; }
-  /* line 8, sass/pages/_landing.scss */
-  .section__flow-box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 3rem;
-    padding-top: 3rem; }
-    /* line 14, sass/pages/_landing.scss */
-    .section__flow-box--img img {
-      display: block;
-      margin: 0 auto;
-      width: 80%;
-      height: 90%; }
-    /* line 21, sass/pages/_landing.scss */
-    .section__flow-box--description {
-      margin-top: 8rem;
-      color: #fff; }
-  /* line 26, sass/pages/_landing.scss */
-  .section__flow--description {
-    width: 75%; }
-    /* line 28, sass/pages/_landing.scss */
-    .section__flow--description p {
-      line-height: 1.5;
-      margin-top: 2rem; }
+
+/* line 9, sass/pages/_landing.scss */
+.section__listen {
+  width: 95vw;
+  height: 60vh;
+  background-image: url(/images/listen-back.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin: 0 auto; }
+
+/* line 19, sass/pages/_landing.scss */
+.section__find {
+  width: 95vw;
+  height: 60vh;
+  background-color: #161a1a;
+  display: block;
+  margin: 0 auto; }

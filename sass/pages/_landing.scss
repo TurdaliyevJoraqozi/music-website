@@ -2,32 +2,24 @@
 .section__flow {
   width: 95vw;
   height: 70vh;
-  background-color: #161a1a;
+  background-color: $section-background;
   display: block;
   margin: 0 auto;
-  &-box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 3rem;
-    padding-top: 3rem;
-    &--img {
-      img {
-        display: block;
-        margin: 0 auto;
-        width: 80%;
-        height: 90%;
-      }
-    }
-    &--description {
-      margin-top: 8rem;
-      color: $color-white;
-    }
-  }
-  &--description {
-    width: 75%;
-    p {
-      line-height: 1.5;
-      margin-top: 2rem;
-    }
-  }
+}
+.section__listen {
+  width: 95vw;
+  height: 60vh;
+  background-image: url(/images/listen-back.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+}
+.section__find {
+  width: 95vw;
+  height: 60vh;
+  background-color: $section-background;
+  display: block;
+  margin: 0 auto;
 }
