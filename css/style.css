@@ -84,6 +84,54 @@ header {
   display: block;
   margin: 0 auto; }
 
+/* line 1, sass/layout/_footer.scss */
+footer {
+  background-color: black;
+  width: 95vw;
+  display: block;
+  margin: 0 auto;
+  padding: 10rem 0; }
+
+/* line 8, sass/layout/_footer.scss */
+.footer {
+  display: flex;
+  justify-content: space-between; }
+  /* line 12, sass/layout/_footer.scss */
+  .footer--menus ul {
+    transition: all 1.8s; }
+    /* line 14, sass/layout/_footer.scss */
+    .footer--menus ul li {
+      transition: all 1.8s;
+      margin: 1.2rem 0; }
+      /* line 17, sass/layout/_footer.scss */
+      .footer--menus ul li a {
+        color: #fff;
+        font-size: 1.4rem;
+        transition: 0.5s ease-in-out; }
+        /* line 22, sass/layout/_footer.scss */
+        .footer--menus ul li a:hover {
+          background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+          color: transparent;
+          background-clip: text;
+          -webkit-background-clip: text;
+          background-color: #333; }
+  /* line 34, sass/layout/_footer.scss */
+  .footer--icons i {
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    border-radius: 50%;
+    background-color: #333;
+    transition: 0.5s ease-in-out;
+    margin: 0 0.5rem; }
+    /* line 42, sass/layout/_footer.scss */
+    .footer--icons i:hover {
+      background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-color: #333; }
+
 /* line 2, sass/base/_typography.scss */
 .section__flow-box {
   padding-top: 1.5rem; }
@@ -155,6 +203,34 @@ header {
   font-size: 1.4rem;
   padding: 3rem 0; }
 
+/* line 75, sass/base/_typography.scss */
+.comment {
+  display: flex;
+  justify-content: space-between; }
+  /* line 80, sass/base/_typography.scss */
+  .comment__list--1 ul {
+    display: flex; }
+    /* line 82, sass/base/_typography.scss */
+    .comment__list--1 ul li {
+      margin-right: 2rem; }
+      /* line 84, sass/base/_typography.scss */
+      .comment__list--1 ul li a {
+        color: #fff;
+        transition: 0.5s ease-in-out; }
+        /* line 87, sass/base/_typography.scss */
+        .comment__list--1 ul li a:hover {
+          color: coral; }
+  /* line 95, sass/base/_typography.scss */
+  .comment__list--2 select {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1.1rem; }
+  /* line 100, sass/base/_typography.scss */
+  .comment__list--2 p {
+    text-align: center;
+    color: #fff;
+    margin-top: 1.1rem; }
+
 /* line 3, sass/pages/_landing.scss */
 .section__flow {
   width: 95vw;
@@ -190,12 +266,12 @@ header {
   display: block;
   margin: 0 auto;
   padding: 0 10rem; }
-  /* line 34, sass/pages/_landing.scss */
+  /* line 35, sass/pages/_landing.scss */
   .section__premium-icons {
     padding: 0 6rem;
     margin-top: 4rem; }
 
-/* line 40, sass/pages/_landing.scss */
+/* line 41, sass/pages/_landing.scss */
 .section__premium--cards {
   padding: 0 10rem; }
 
@@ -236,21 +312,22 @@ header {
     margin-top: 2 rem; }
     /* line 21, sass/components/_card.scss */
     .musicbox--card ul li {
-      font-size: 1.2rem; }
-    /* line 24, sass/components/_card.scss */
+      font-size: 1.2rem;
+      margin: 2rem 0; }
+    /* line 25, sass/components/_card.scss */
     .musicbox--card ul i {
       margin-right: 1.5rem; }
-  /* line 28, sass/components/_card.scss */
+  /* line 29, sass/components/_card.scss */
   .musicbox--card:hover {
     transform: translateY(-1rem); }
-  /* line 32, sass/components/_card.scss */
+  /* line 33, sass/components/_card.scss */
   .musicbox--card--2 p {
     background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     background-color: #333; }
-  /* line 40, sass/components/_card.scss */
+  /* line 41, sass/components/_card.scss */
   .musicbox--card--2 ul i {
     background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
     color: transparent;

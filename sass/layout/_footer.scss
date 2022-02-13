@@ -1,0 +1,51 @@
+footer {
+  background-color: black;
+  width: 95vw;
+  display: block;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  &--menus {
+    ul {
+      transition: all 1.8s;
+      li {
+        transition: all 1.8s;
+        margin: 1.2rem 0;
+        a {
+          color: $color-white;
+          font-size: 1.4rem;
+          transition: 0.5s ease-in-out;
+
+          &:hover {
+            background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-color: #333;
+          }
+        }
+      }
+    }
+  }
+  &--icons {
+    i {
+      color: $color-white;
+      font-size: 1.4rem;
+      padding: 1.5rem;
+      border-radius: 50%;
+      background-color: #333;
+      transition: 0.5s ease-in-out;
+      margin: 0 0.5rem;
+      &:hover {
+        background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-color: #333;
+      }
+    }
+  }
+}
