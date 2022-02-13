@@ -84,65 +84,78 @@ header {
   display: block;
   margin: 0 auto; }
 
-/* line 2, sass/base/typography.scss */
+/* line 2, sass/base/_typography.scss */
 .section__flow-box {
   padding-top: 1.5rem; }
-  /* line 5, sass/base/typography.scss */
+  /* line 5, sass/base/_typography.scss */
   .section__flow-box--img img {
     display: block;
     margin: 0 auto;
     width: 100%;
     height: 90%; }
-  /* line 12, sass/base/typography.scss */
+  /* line 12, sass/base/_typography.scss */
   .section__flow-box--description {
     margin-top: 8rem;
     color: #fff; }
 
-/* line 17, sass/base/typography.scss */
+/* line 17, sass/base/_typography.scss */
 .section__flow--description {
   width: 100%; }
-  /* line 19, sass/base/typography.scss */
+  /* line 19, sass/base/_typography.scss */
   .section__flow--description p {
     line-height: 1.5;
     margin-top: 2rem; }
 
-/* line 26, sass/base/typography.scss */
+/* line 26, sass/base/_typography.scss */
 .section__listen--description {
   color: #fff; }
-  /* line 28, sass/base/typography.scss */
+  /* line 28, sass/base/_typography.scss */
   .section__listen--description h3 {
     padding-top: 10rem;
     font-size: 2.4rem; }
-  /* line 32, sass/base/typography.scss */
+  /* line 32, sass/base/_typography.scss */
   .section__listen--description p {
     width: 50%;
     margin-top: 3rem;
     line-height: 1.5;
     font-size: 1.4rem; }
 
-/* line 41, sass/base/typography.scss */
+/* line 41, sass/base/_typography.scss */
 .section__find-box {
   padding-top: 5rem; }
-  /* line 43, sass/base/typography.scss */
+  /* line 43, sass/base/_typography.scss */
   .section__find-box--description {
     color: #fff; }
-    /* line 45, sass/base/typography.scss */
+    /* line 45, sass/base/_typography.scss */
     .section__find-box--description h3 {
       margin-top: 8rem;
       font-size: 2rem; }
-    /* line 49, sass/base/typography.scss */
+    /* line 49, sass/base/_typography.scss */
     .section__find-box--description p {
       font-size: 1.3rem;
       line-height: 2;
       margin-top: 2rem; }
-  /* line 56, sass/base/typography.scss */
+  /* line 56, sass/base/_typography.scss */
   .section__find-box--img img {
     display: block;
     margin: 0 auto;
     width: 20rem;
     height: 30rem; }
 
-/* line 2, sass/pages/_landing.scss */
+/* line 64, sass/base/_typography.scss */
+.title {
+  text-align: center;
+  color: #fff;
+  font-size: 2.3rem; }
+
+/* line 69, sass/base/_typography.scss */
+.paragraph {
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 3rem 0; }
+
+/* line 3, sass/pages/_landing.scss */
 .section__flow {
   width: 95vw;
   height: 70vh;
@@ -150,7 +163,7 @@ header {
   display: block;
   margin: 0 auto; }
 
-/* line 9, sass/pages/_landing.scss */
+/* line 10, sass/pages/_landing.scss */
 .section__listen {
   width: 95vw;
   height: 60vh;
@@ -161,10 +174,100 @@ header {
   display: block;
   margin: 0 auto; }
 
-/* line 19, sass/pages/_landing.scss */
+/* line 20, sass/pages/_landing.scss */
 .section__find {
   width: 95vw;
   height: 60vh;
   background-color: #161a1a;
   display: block;
   margin: 0 auto; }
+
+/* line 27, sass/pages/_landing.scss */
+.section__premium {
+  width: 95vw;
+  height: 90vh;
+  background-color: #161a1a;
+  display: block;
+  margin: 0 auto;
+  padding: 0 10rem; }
+  /* line 34, sass/pages/_landing.scss */
+  .section__premium-icons {
+    padding: 0 6rem;
+    margin-top: 4rem; }
+
+/* line 40, sass/pages/_landing.scss */
+.section__premium--cards {
+  padding: 0 10rem; }
+
+/* line 1, sass/components/icons.scss */
+.icon {
+  text-align: center;
+  color: #fff; }
+  /* line 4, sass/components/icons.scss */
+  .icon i {
+    font-size: 2.9rem;
+    background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-color: #333; }
+
+/* line 1, sass/components/_card.scss */
+.musicbox--card {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 2rem;
+  width: 70%;
+  height: 30rem;
+  position: relative;
+  transition: all 0.5s; }
+  /* line 9, sass/components/_card.scss */
+  .musicbox--card h3 {
+    font-size: 1.6rem; }
+  /* line 12, sass/components/_card.scss */
+  .musicbox--card p {
+    font-size: 1.6rem;
+    margin: 0.8rem 0; }
+    /* line 15, sass/components/_card.scss */
+    .musicbox--card p span {
+      font-size: 1.2rem; }
+  /* line 19, sass/components/_card.scss */
+  .musicbox--card ul {
+    margin-top: 2 rem; }
+    /* line 21, sass/components/_card.scss */
+    .musicbox--card ul li {
+      font-size: 1.2rem; }
+    /* line 24, sass/components/_card.scss */
+    .musicbox--card ul i {
+      margin-right: 1.5rem; }
+  /* line 28, sass/components/_card.scss */
+  .musicbox--card:hover {
+    transform: translateY(-1rem); }
+  /* line 32, sass/components/_card.scss */
+  .musicbox--card--2 p {
+    background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-color: #333; }
+  /* line 40, sass/components/_card.scss */
+  .musicbox--card--2 ul i {
+    background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-color: #333; }
+
+/* line 1, sass/components/_buttons.scss */
+.btn {
+  position: absolute;
+  color: #fff;
+  font-size: 1.4rem;
+  bottom: -7rem;
+  border: 1px solid #fff;
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  transition: 0.5s; }
+  /* line 10, sass/components/_buttons.scss */
+  .btn:hover {
+    background-image: linear-gradient(to bottom, #2da7f8, #5f61e3); }

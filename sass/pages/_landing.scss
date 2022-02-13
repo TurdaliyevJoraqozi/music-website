@@ -1,25 +1,42 @@
 // section__flow page
-.section__flow {
-  width: 95vw;
-  height: 70vh;
-  background-color: $section-background;
-  display: block;
-  margin: 0 auto;
+.section {
+  &__flow {
+    width: 95vw;
+    height: 70vh;
+    background-color: $section-background;
+    display: block;
+    margin: 0 auto;
+  }
+  &__listen {
+    width: 95vw;
+    height: 60vh;
+    background-image: url(/images/listen-back.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
+  }
+  &__find {
+    width: 95vw;
+    height: 60vh;
+    background-color: $section-background;
+    display: block;
+    margin: 0 auto;
+  }
+  &__premium {
+    width: 95vw;
+    height: 90vh;
+    background-color: $section-background;
+    display: block;
+    margin: 0 auto;
+    padding: 0 10rem;
+    &-icons {
+      padding: 0 6rem;
+      margin-top: 4rem;
+    }
+  }
 }
-.section__listen {
-  width: 95vw;
-  height: 60vh;
-  background-image: url(/images/listen-back.PNG);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block;
-  margin: 0 auto;
-}
-.section__find {
-  width: 95vw;
-  height: 60vh;
-  background-color: $section-background;
-  display: block;
-  margin: 0 auto;
+.section__premium--cards {
+  padding: 0 10rem;
 }

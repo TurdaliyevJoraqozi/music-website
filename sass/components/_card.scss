@@ -1,0 +1,49 @@
+.musicbox--card {
+  color: $color-white;
+  border: 1px solid $color-white;
+  padding: 2rem;
+  width: 70%;
+  height: 30rem;
+  position: relative;
+  transition: all 0.5s;
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.6rem;
+    margin: 0.8rem 0;
+    span {
+      font-size: 1.2rem;
+    }
+  }
+  ul {
+    margin-top: 2 rem;
+    li {
+      font-size: 1.2rem;
+    }
+    i {
+      margin-right: 1.5rem;
+    }
+  }
+  &:hover {
+    transform: translateY(-1rem);
+  }
+  &--2 {
+    p {
+      background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-color: #333;
+    }
+    ul {
+      i {
+        background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-color: #333;
+      }
+    }
+  }
+}

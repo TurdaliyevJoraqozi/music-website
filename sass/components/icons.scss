@@ -1,0 +1,12 @@
+.icon {
+  text-align: center;
+  color: $color-white;
+  i {
+    font-size: 2.9rem;
+    background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-color: #333;
+  }
+}

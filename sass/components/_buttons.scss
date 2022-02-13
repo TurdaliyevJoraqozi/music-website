@@ -1,0 +1,13 @@
+.btn {
+  position: absolute;
+  color: $color-white;
+  font-size: 1.4rem;
+  bottom: -7rem;
+  border: 1px solid $color-white;
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  transition: 0.5s;
+  &:hover {
+    background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+  }
+}
