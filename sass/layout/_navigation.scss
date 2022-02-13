@@ -1,0 +1,30 @@
+// landing page navigation
+.landing__nav {
+  display: flex;
+  justify-content: space-between;
+  // margin-top: 2rem;
+  .landing__nav-menus {
+    ul {
+      display: flex;
+      li {
+        margin-left: 2.3rem;
+        a {
+          font-size: 1.8rem;
+          color: $color-white;
+          span {
+            background-color: $color-white;
+            transition: all 0.4s ease-in-out;
+            color: rgba(129, 5, 109, 0.959);
+            padding: 0.8rem 1rem;
+            border-radius: 0.8rem;
+            border: 1px solid $color-white;
+            &:hover {
+              background-color: transparent;
+              color: $color-white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

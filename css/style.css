@@ -26,3 +26,73 @@ li {
 .container {
   width: 80%;
   margin: 0 auto; }
+
+/* line 2, sass/layout/_navigation.scss */
+.landing__nav {
+  display: flex;
+  justify-content: space-between; }
+  /* line 7, sass/layout/_navigation.scss */
+  .landing__nav .landing__nav-menus ul {
+    display: flex; }
+    /* line 9, sass/layout/_navigation.scss */
+    .landing__nav .landing__nav-menus ul li {
+      margin-left: 2.3rem; }
+      /* line 11, sass/layout/_navigation.scss */
+      .landing__nav .landing__nav-menus ul li a {
+        font-size: 1.8rem;
+        color: #fff; }
+        /* line 14, sass/layout/_navigation.scss */
+        .landing__nav .landing__nav-menus ul li a span {
+          background-color: #fff;
+          transition: all 0.4s ease-in-out;
+          color: rgba(129, 5, 109, 0.959);
+          padding: 0.8rem 1rem;
+          border-radius: 0.8rem;
+          border: 1px solid #fff; }
+          /* line 21, sass/layout/_navigation.scss */
+          .landing__nav .landing__nav-menus ul li a span:hover {
+            background-color: transparent;
+            color: #fff; }
+
+/* line 1, sass/layout/_header.scss */
+header {
+  width: 95vw;
+  height: 100vh;
+  background-image: url(/images/BG-22.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 2rem;
+  display: block;
+  margin: 0 auto; }
+
+/* line 2, sass/pages/_landing.scss */
+.section__flow {
+  width: 95vw;
+  height: 70vh;
+  background-color: #161a1a;
+  display: block;
+  margin: 0 auto; }
+  /* line 8, sass/pages/_landing.scss */
+  .section__flow-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    padding-top: 3rem; }
+    /* line 14, sass/pages/_landing.scss */
+    .section__flow-box--img img {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      height: 90%; }
+    /* line 21, sass/pages/_landing.scss */
+    .section__flow-box--description {
+      margin-top: 8rem;
+      color: #fff; }
+  /* line 26, sass/pages/_landing.scss */
+  .section__flow--description {
+    width: 75%; }
+    /* line 28, sass/pages/_landing.scss */
+    .section__flow--description p {
+      line-height: 1.5;
+      margin-top: 2rem; }

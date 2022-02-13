@@ -8,25 +8,52 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto+Mono:ital,wght@0,600;0,700;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Landing page</title>
   </head>
   <body>
-    <nav>
-      <div class="landing__nav">
-        <div class="logo"></div>
-        <div class="landing__nav-menus">
-          <li><a href="#">Download</a></li>
-          <li><a href="#">Help</a></li>
-          <li>
-            <a href="#"><span>Login</span></a>
-          </li>
-          <li>
-            <a href="#"><span>Sign Up</span></a>
-          </li>
+    <header>
+      <nav class="container">
+        <div class="landing__nav">
+          <div class="logo">
+            <img src="./images/landing__logo.PNG" alt="landing__logo.PNG" />
+          </div>
+          <div class="landing__nav-menus">
+            <ul>
+              <li><a href="#">Download</a></li>
+              <li><a href="#">Help</a></li>
+              <li>
+                <a href="#"><span>Login</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Sign Up</span></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <main></main>
+      </nav>
+    </header>
+    <main>
+      <section class="section__flow">
+        <div class="section__flow-box container">
+          <div class="section__flow-box--img">
+            <img src="/images/landing-phone.PNG" alt="landing-phone.PNG" />
+          </div>
+          <div class="section__flow-box--description">
+            <div class="section__flow--icon">
+              <img src="/images/flow-icon.PNG" alt="flow-icon" />
+            </div>
+            <div class="section__flow--description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+                culpa quam impedit nesciunt sed at, perspiciatis numquam
+                obcaecati fugit illum officiis adipisci minima illo maiores!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

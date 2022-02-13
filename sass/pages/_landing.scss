@@ -1,0 +1,33 @@
+// section__flow page
+.section__flow {
+  width: 95vw;
+  height: 70vh;
+  background-color: #161a1a;
+  display: block;
+  margin: 0 auto;
+  &-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    padding-top: 3rem;
+    &--img {
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: 90%;
+      }
+    }
+    &--description {
+      margin-top: 8rem;
+      color: $color-white;
+    }
+  }
+  &--description {
+    width: 75%;
+    p {
+      line-height: 1.5;
+      margin-top: 2rem;
+    }
+  }
+}
