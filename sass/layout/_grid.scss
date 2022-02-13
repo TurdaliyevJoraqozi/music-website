@@ -14,3 +14,13 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 2rem;
 }
+.grid5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 1.5rem;
+}
+.grid6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 1rem;
+}

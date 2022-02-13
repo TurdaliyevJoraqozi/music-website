@@ -28,3 +28,49 @@
     }
   }
 }
+// ----------------home__nav---------------------
+.home__nav {
+  padding-top: 3rem;
+  color: $color-white;
+  margin: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  .home__nav--left {
+    display: flex;
+    &--list {
+      ul {
+        display: flex;
+        li {
+          margin-left: 4rem;
+
+          a {
+            color: $color-white;
+            font-size: 1.6rem;
+            font-weight: 600;
+            &:hover {
+              background-image: linear-gradient(to right, #2da7f8, #5f61e3);
+              color: transparent;
+              background-clip: text;
+              -webkit-background-clip: text;
+            }
+          }
+        }
+      }
+    }
+  }
+  &--right {
+    input {
+      background-color: #333;
+      padding: 0.6rem 1rem;
+      border-radius: 1.2rem;
+      border: none;
+      margin-right: 1rem;
+      color: $color-white;
+    }
+    select {
+      border: none;
+      color: $color-white;
+      background-color: transparent;
+    }
+  }
+}

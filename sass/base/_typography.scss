@@ -105,3 +105,38 @@
     }
   }
 }
+.more {
+  color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  margin: 2.6rem 0;
+  p {
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
+  i {
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
+}
+.play {
+  img {
+    display: block;
+    margin: 6rem auto;
+    height: 6rem;
+    width: 96vw;
+  }
+}

@@ -21,3 +21,15 @@ li {
   width: 80%;
   margin: 0 auto;
 }
+.home__page-body {
+  background-color: #161a1a;
+}
+input,
+select {
+  outline: none;
+}
+.active {
+  border: 1px solid #173da7;
+  padding: 0 0.8rem;
+  border-radius: 1rem;
+}
