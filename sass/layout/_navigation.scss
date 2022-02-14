@@ -39,6 +39,7 @@
     display: flex;
     &--list {
       ul {
+        margin-top: 1rem;
         display: flex;
         li {
           margin-left: 4rem;
@@ -71,6 +72,16 @@
       border: none;
       color: $color-white;
       background-color: transparent;
+    }
+  }
+}
+// -------------podcast__nav
+.podcast__nav {
+  .home__nav--left--list {
+    ul {
+      li {
+        margin-left: 3rem;
+      }
     }
   }
 }

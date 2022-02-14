@@ -3,7 +3,14 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3rem;
 }
-
+.grid2-gap5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.5rem;
+}
+.flex1 {
+  display: flex;
+}
 .grid3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

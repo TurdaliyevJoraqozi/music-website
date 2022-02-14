@@ -4,25 +4,35 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3rem; }
 
-/* line 7, sass/layout/_grid.scss */
+/* line 6, sass/layout/_grid.scss */
+.grid2-gap5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.5rem; }
+
+/* line 11, sass/layout/_grid.scss */
+.flex1 {
+  display: flex; }
+
+/* line 14, sass/layout/_grid.scss */
 .grid3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem; }
 
-/* line 12, sass/layout/_grid.scss */
+/* line 19, sass/layout/_grid.scss */
 .grid4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 2rem; }
 
-/* line 17, sass/layout/_grid.scss */
+/* line 24, sass/layout/_grid.scss */
 .grid5 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 1.5rem; }
 
-/* line 22, sass/layout/_grid.scss */
+/* line 29, sass/layout/_grid.scss */
 .grid6 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -58,15 +68,16 @@ li {
   margin: 0 auto; }
 
 /* line 24, sass/base/_reset.scss */
-.home__page-body {
+.home__page-body,
+.podcast__page-body {
   background-color: #161a1a; }
 
-/* line 27, sass/base/_reset.scss */
+/* line 28, sass/base/_reset.scss */
 input,
 select {
   outline: none; }
 
-/* line 31, sass/base/_reset.scss */
+/* line 32, sass/base/_reset.scss */
 .active {
   border: 1px solid #173da7;
   padding: 0 0.8rem;
@@ -111,22 +122,23 @@ select {
     display: flex; }
     /* line 41, sass/layout/_navigation.scss */
     .home__nav .home__nav--left--list ul {
+      margin-top: 1rem;
       display: flex; }
-      /* line 43, sass/layout/_navigation.scss */
+      /* line 44, sass/layout/_navigation.scss */
       .home__nav .home__nav--left--list ul li {
         margin-left: 4rem; }
-        /* line 46, sass/layout/_navigation.scss */
+        /* line 47, sass/layout/_navigation.scss */
         .home__nav .home__nav--left--list ul li a {
           color: #fff;
           font-size: 1.6rem;
           font-weight: 600; }
-          /* line 50, sass/layout/_navigation.scss */
+          /* line 51, sass/layout/_navigation.scss */
           .home__nav .home__nav--left--list ul li a:hover {
             background-image: linear-gradient(to right, #2da7f8, #5f61e3);
             color: transparent;
             background-clip: text;
             -webkit-background-clip: text; }
-  /* line 62, sass/layout/_navigation.scss */
+  /* line 63, sass/layout/_navigation.scss */
   .home__nav--right input {
     background-color: #333;
     padding: 0.6rem 1rem;
@@ -134,11 +146,15 @@ select {
     border: none;
     margin-right: 1rem;
     color: #fff; }
-  /* line 70, sass/layout/_navigation.scss */
+  /* line 71, sass/layout/_navigation.scss */
   .home__nav--right select {
     border: none;
     color: #fff;
     background-color: transparent; }
+
+/* line 82, sass/layout/_navigation.scss */
+.podcast__nav .home__nav--left--list ul li {
+  margin-left: 3rem; }
 
 /* line 1, sass/layout/_header.scss */
 .landing__header {
@@ -361,6 +377,30 @@ select {
     .landing__header-description p span {
       color: blue; }
 
+/* line 175, sass/base/_typography.scss */
+.middle {
+  margin-left: 9rem; }
+
+/* line 178, sass/base/_typography.scss */
+.this__week {
+  margin-top: 4rem; }
+
+/* line 182, sass/base/_typography.scss */
+.flex1 div {
+  text-align: center;
+  margin-right: 2rem; }
+  /* line 185, sass/base/_typography.scss */
+  .flex1 div p {
+    color: #fff;
+    font-size: 1.2rem; }
+  /* line 189, sass/base/_typography.scss */
+  .flex1 div span {
+    color: rgba(240, 248, 255, 0.432); }
+
+/* line 194, sass/base/_typography.scss */
+.feature_items {
+  margin: 3rem 0; }
+
 /* line 3, sass/pages/_landing.scss */
 .section__flow {
   width: 95vw;
@@ -423,10 +463,24 @@ select {
     justify-content: center;
     margin-top: 0.5rem;
     opacity: 0.7; }
+    /* line 22, sass/pages/_home.scss */
+    .flow__img--2 .like i {
+      margin-right: 0.8rem; }
+      /* line 24, sass/pages/_home.scss */
+      .flow__img--2 .like i:hover {
+        color: crimson; }
 
-/* line 24, sass/pages/_home.scss */
+/* line 30, sass/pages/_home.scss */
 .images__artists {
   margin-bottom: 6rem; }
+
+/* line 1, sass/pages/_podcast.scss */
+.feature {
+  margin-top: 10rem; }
+
+/* line 4, sass/pages/_podcast.scss */
+.categories {
+  margin: 5rem auto; }
 
 /* line 1, sass/components/icons.scss */
 .icon {
@@ -514,3 +568,15 @@ select {
   /* line 23, sass/components/_buttons.scss */
   .header-btn:hover {
     background-image: linear-gradient(to right, #2da7f8, #5f61e3); }
+
+/* line 27, sass/components/_buttons.scss */
+.podcast_btn {
+  position: relative;
+  padding: 1rem5;
+  border-radius: 1.9rem;
+  display: block;
+  margin: 0 auto;
+  width: 20rem;
+  text-align: center;
+  margin-top: -3rem;
+  transition: all 0.5s ease-in-out; }

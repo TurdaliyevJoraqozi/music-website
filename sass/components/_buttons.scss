@@ -24,3 +24,14 @@
     background-image: linear-gradient(to right, #2da7f8, #5f61e3);
   }
 }
+.podcast_btn {
+  position: relative;
+  padding: 1rem5;
+  border-radius: 1.9rem;
+  display: block;
+  margin: 0 auto;
+  width: 20rem;
+  text-align: center;
+  margin-top: -3rem;
+  transition: all 0.5s ease-in-out;
+}
