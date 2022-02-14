@@ -91,6 +91,13 @@ select {
   background-size: cover;
   background-repeat: no-repeat; }
 
+/* line 43, sass/base/_reset.scss */
+.body__albom {
+  background-image: url(/images/BG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
 /* line 2, sass/layout/_navigation.scss */
 .landing__nav {
   display: flex;
@@ -587,6 +594,40 @@ select {
 /* line 4, sass/pages/_podcast.scss */
 .categories {
   margin: 5rem auto; }
+
+/* line 1, sass/pages/_albom.scss */
+.albom {
+  padding: 1rem;
+  margin: 1rem 0;
+  padding-top: 1.6rem; }
+  /* line 4, sass/pages/_albom.scss */
+  .albom .colum1 {
+    display: flex; }
+    /* line 5, sass/pages/_albom.scss */
+    .albom .colum1 img {
+      margin-top: -1.5rem;
+      margin-right: 0.8rem; }
+  /* line 12, sass/pages/_albom.scss */
+  .albom:hover {
+    background-color: rgba(255, 255, 255, 0.293);
+    transition: all 0.6s; }
+    /* line 15, sass/pages/_albom.scss */
+    .albom:hover div {
+      color: rgba(255, 255, 255, 0.973); }
+  /* line 19, sass/pages/_albom.scss */
+  .albom div:not(:first-child) {
+    text-align: right; }
+  /* line 22, sass/pages/_albom.scss */
+  .albom div {
+    color: #fff;
+    font-size: 1.4rem; }
+    /* line 25, sass/pages/_albom.scss */
+    .albom div span {
+      color: #fff;
+      opacity: 0.5; }
+    /* line 30, sass/pages/_albom.scss */
+    .albom div i:hover {
+      color: crimson; }
 
 /* line 1, sass/components/icons.scss */
 .icon {
