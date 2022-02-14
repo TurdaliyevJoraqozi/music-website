@@ -144,7 +144,7 @@ select {
 .landing__header {
   width: 95vw;
   height: 100vh;
-  background-image: url(/images/BG-22.avif);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.274)), url(/images/landing__header.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -331,8 +331,35 @@ select {
 .play img {
   display: block;
   margin: 6rem auto;
+  margin-bottom: 2rem;
   height: 6rem;
-  width: 96vw; }
+  width: 95vw; }
+
+/* line 147, sass/base/_typography.scss */
+.music__podcast div img,
+.music__types div img {
+  width: 17rem;
+  height: 10rem; }
+
+/* line 154, sass/base/_typography.scss */
+.landing__header-description {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem; }
+  /* line 161, sass/base/_typography.scss */
+  .landing__header-description h2 {
+    font-size: 2.6rem;
+    font-weight: 900;
+    margin-bottom: 2rem; }
+  /* line 167, sass/base/_typography.scss */
+  .landing__header-description p {
+    margin-top: 4rem; }
+    /* line 169, sass/base/_typography.scss */
+    .landing__header-description p span {
+      color: blue; }
 
 /* line 3, sass/pages/_landing.scss */
 .section__flow {
@@ -374,10 +401,6 @@ select {
     padding: 0 6rem;
     margin-top: 4rem; }
 
-/* line 41, sass/pages/_landing.scss */
-.section__premium--cards {
-  padding: 0 10rem; }
-
 /* line 2, sass/pages/_home.scss */
 .flow__img img {
   height: 20rem;
@@ -400,6 +423,10 @@ select {
     justify-content: center;
     margin-top: 0.5rem;
     opacity: 0.7; }
+
+/* line 24, sass/pages/_home.scss */
+.images__artists {
+  margin-bottom: 6rem; }
 
 /* line 1, sass/components/icons.scss */
 .icon {
@@ -458,6 +485,10 @@ select {
     -webkit-background-clip: text;
     background-color: #333; }
 
+/* line 49, sass/components/_card.scss */
+.section__premium--cards {
+  padding: 0 10rem; }
+
 /* line 1, sass/components/_buttons.scss */
 .btn {
   position: absolute;
@@ -471,3 +502,15 @@ select {
   /* line 10, sass/components/_buttons.scss */
   .btn:hover {
     background-image: linear-gradient(to bottom, #2da7f8, #5f61e3); }
+
+/* line 14, sass/components/_buttons.scss */
+.header-btn {
+  color: #fff;
+  font-size: 1.4rem;
+  border: 1px solid #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 2rem;
+  transition: 0.5s; }
+  /* line 23, sass/components/_buttons.scss */
+  .header-btn:hover {
+    background-image: linear-gradient(to right, #2da7f8, #5f61e3); }

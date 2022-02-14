@@ -1,7 +1,9 @@
 .landing__header {
   width: 95vw;
   height: 100vh;
-  background-image: url(/images/BG-22.avif);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.274)),
+    url(/images/landing__header.jpg);
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
