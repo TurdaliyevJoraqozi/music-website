@@ -68,35 +68,38 @@ li {
   width: 80%;
   margin: 0 auto; }
 
-/* line 24, sass/base/_reset.scss */
-.home__page-body,
-.podcast__page-body {
-  background-color: #161a1a; }
-
-/* line 28, sass/base/_reset.scss */
+/* line 25, sass/base/_reset.scss */
 input,
 select {
   outline: none; }
 
-/* line 32, sass/base/_reset.scss */
+/* line 29, sass/base/_reset.scss */
 .active {
   border: 1px solid #173da7;
   padding: 0 0.8rem;
   border-radius: 1rem; }
 
-/* line 37, sass/base/_reset.scss */
-.playlist__body {
+/* line 35, sass/base/_reset.scss */
+.body__home__page, .body__podcast__page {
+  background-color: #161a1a; }
+
+/* line 39, sass/base/_reset.scss */
+.body__playlist {
   background-image: url(/images/BG-2.avif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
 
-/* line 43, sass/base/_reset.scss */
+/* line 45, sass/base/_reset.scss */
 .body__albom {
   background-image: url(/images/BG.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+
+/* line 51, sass/base/_reset.scss */
+.body__releases {
+  background-color: #161a1a; }
 
 /* line 2, sass/layout/_navigation.scss */
 .landing__nav {

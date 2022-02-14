@@ -21,10 +21,7 @@ li {
   width: 80%;
   margin: 0 auto;
 }
-.home__page-body,
-.podcast__page-body {
-  background-color: #161a1a;
-}
+
 input,
 select {
   outline: none;
@@ -34,15 +31,24 @@ select {
   padding: 0 0.8rem;
   border-radius: 1rem;
 }
-.playlist__body {
-  background-image: url(/images/BG-2.avif);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.body__albom {
-  background-image: url(/images/BG.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.body {
+  &__home__page,
+  &__podcast__page {
+    background-color: #161a1a;
+  }
+  &__playlist {
+    background-image: url(/images/BG-2.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__albom {
+    background-image: url(/images/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &__releases {
+    background-color: #161a1a;
+  }
 }
