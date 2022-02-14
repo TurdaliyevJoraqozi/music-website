@@ -1,0 +1,82 @@
+.section__playlist {
+  margin-top: 5rem;
+}
+.header__playlist {
+  &--left {
+    display: flex;
+    img {
+      width: 15rem;
+      height: 15rem;
+    }
+    div {
+      margin-left: 3rem;
+      color: $color-white;
+      span {
+        font-weight: 600;
+        font-size: 1.6rem;
+        margin: 0.8rem 0;
+      }
+      h2 {
+        font-weight: 800;
+        font-size: 3.2rem;
+      }
+      p {
+        color: aliceblue;
+        opacity: 0.7;
+      }
+    }
+  }
+  &--right {
+    text-align: right;
+    p {
+      color: #fff;
+      margin-top: 2rem;
+    }
+    i {
+      color: #fff;
+      font-size: 1.8rem;
+      margin-left: 2rem;
+      border: 1px solid #fff;
+      padding: 1rem;
+      border-radius: 50%;
+      transition: all 0.9s;
+      &:hover {
+        color: crimson;
+      }
+    }
+  }
+}
+.songs {
+  margin: 1rem 0;
+  .colum1 {
+    img {
+      margin-top: -1.5rem;
+      margin-right: 0.8rem;
+    }
+    display: flex;
+  }
+  padding-top: 1.6rem;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.293);
+    transition: all 0.6s;
+    div {
+      color: rgba(255, 255, 255, 0.973);
+    }
+  }
+  div:not(:first-child) {
+    text-align: right;
+  }
+  div {
+    color: #fff;
+    font-size: 1.4rem;
+    span {
+      color: #fff;
+      opacity: 0.5;
+    }
+    i {
+      &:hover {
+        color: crimson;
+      }
+    }
+  }
+}

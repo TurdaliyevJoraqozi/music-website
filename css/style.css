@@ -12,27 +12,28 @@
 
 /* line 11, sass/layout/_grid.scss */
 .flex1 {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
 
-/* line 14, sass/layout/_grid.scss */
+/* line 15, sass/layout/_grid.scss */
 .grid3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem; }
 
-/* line 19, sass/layout/_grid.scss */
+/* line 20, sass/layout/_grid.scss */
 .grid4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 2rem; }
 
-/* line 24, sass/layout/_grid.scss */
+/* line 25, sass/layout/_grid.scss */
 .grid5 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 1.5rem; }
 
-/* line 29, sass/layout/_grid.scss */
+/* line 30, sass/layout/_grid.scss */
 .grid6 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -82,6 +83,13 @@ select {
   border: 1px solid #173da7;
   padding: 0 0.8rem;
   border-radius: 1rem; }
+
+/* line 37, sass/base/_reset.scss */
+.playlist__body {
+  background-image: url(/images/BG-2.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /* line 2, sass/layout/_navigation.scss */
 .landing__nav {
@@ -401,6 +409,22 @@ select {
 .feature_items {
   margin: 3rem 0; }
 
+/* line 198, sass/base/_typography.scss */
+.more div {
+  opacity: 0.7;
+  display: flex; }
+  /* line 201, sass/base/_typography.scss */
+  .more div i {
+    margin-right: 2rem; }
+
+/* line 205, sass/base/_typography.scss */
+.more select,
+.more input {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  opacity: 0.7; }
+
 /* line 3, sass/pages/_landing.scss */
 .section__flow {
   width: 95vw;
@@ -440,6 +464,88 @@ select {
   .section__premium-icons {
     padding: 0 6rem;
     margin-top: 4rem; }
+
+/* line 1, sass/pages/_playlist.scss */
+.section__playlist {
+  margin-top: 5rem; }
+
+/* line 5, sass/pages/_playlist.scss */
+.header__playlist--left {
+  display: flex; }
+  /* line 7, sass/pages/_playlist.scss */
+  .header__playlist--left img {
+    width: 15rem;
+    height: 15rem; }
+  /* line 11, sass/pages/_playlist.scss */
+  .header__playlist--left div {
+    margin-left: 3rem;
+    color: #fff; }
+    /* line 14, sass/pages/_playlist.scss */
+    .header__playlist--left div span {
+      font-weight: 600;
+      font-size: 1.6rem;
+      margin: 0.8rem 0; }
+    /* line 19, sass/pages/_playlist.scss */
+    .header__playlist--left div h2 {
+      font-weight: 800;
+      font-size: 3.2rem; }
+    /* line 23, sass/pages/_playlist.scss */
+    .header__playlist--left div p {
+      color: aliceblue;
+      opacity: 0.7; }
+
+/* line 29, sass/pages/_playlist.scss */
+.header__playlist--right {
+  text-align: right; }
+  /* line 31, sass/pages/_playlist.scss */
+  .header__playlist--right p {
+    color: #fff;
+    margin-top: 2rem; }
+  /* line 35, sass/pages/_playlist.scss */
+  .header__playlist--right i {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 0.9s; }
+    /* line 43, sass/pages/_playlist.scss */
+    .header__playlist--right i:hover {
+      color: crimson; }
+
+/* line 49, sass/pages/_playlist.scss */
+.songs {
+  margin: 1rem 0;
+  padding-top: 1.6rem; }
+  /* line 51, sass/pages/_playlist.scss */
+  .songs .colum1 {
+    display: flex; }
+    /* line 52, sass/pages/_playlist.scss */
+    .songs .colum1 img {
+      margin-top: -1.5rem;
+      margin-right: 0.8rem; }
+  /* line 59, sass/pages/_playlist.scss */
+  .songs:hover {
+    background-color: rgba(255, 255, 255, 0.293);
+    transition: all 0.6s; }
+    /* line 62, sass/pages/_playlist.scss */
+    .songs:hover div {
+      color: rgba(255, 255, 255, 0.973); }
+  /* line 66, sass/pages/_playlist.scss */
+  .songs div:not(:first-child) {
+    text-align: right; }
+  /* line 69, sass/pages/_playlist.scss */
+  .songs div {
+    color: #fff;
+    font-size: 1.4rem; }
+    /* line 72, sass/pages/_playlist.scss */
+    .songs div span {
+      color: #fff;
+      opacity: 0.5; }
+    /* line 77, sass/pages/_playlist.scss */
+    .songs div i:hover {
+      color: crimson; }
 
 /* line 2, sass/pages/_home.scss */
 .flow__img img {
@@ -580,3 +686,17 @@ select {
   text-align: center;
   margin-top: -3rem;
   transition: all 0.5s ease-in-out; }
+
+/* line 38, sass/components/_buttons.scss */
+.btn_universal {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: 1px solid #fff;
+  padding: 0.6rem 5rem;
+  border-radius: 2rem;
+  transition: all 1s; }
+  /* line 47, sass/components/_buttons.scss */
+  .btn_universal:hover {
+    background-image: linear-gradient(to right, #2da7f8, #5f61e3); }

@@ -35,3 +35,16 @@
   margin-top: -3rem;
   transition: all 0.5s ease-in-out;
 }
+.btn_universal {
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: 1px solid #fff;
+  padding: 0.6rem 5rem;
+  border-radius: 2rem;
+  transition: all 1s;
+  &:hover {
+    background-image: linear-gradient(to right, #2da7f8, #5f61e3);
+  }
+}
