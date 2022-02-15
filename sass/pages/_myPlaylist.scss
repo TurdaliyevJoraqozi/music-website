@@ -1,0 +1,51 @@
+.card__active {
+  border: 1px solid $color-white;
+  padding: 6rem 0;
+  height: 16rem;
+  border-radius: 1rem;
+  transition: all 0.6s;
+  margin-bottom: 7rem;
+
+  i {
+    transition: all 0.6s;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+    padding: 1rem;
+  }
+  &:hover {
+    i {
+      background-color: aqua;
+    }
+    box-shadow: rgba(255, 255, 255, 0.9) 0px 1px 4px;
+  }
+}
+
+.footer__playlist {
+  position: relative;
+  &--plus {
+    border-radius: 1rem;
+    background-color: #393a3c;
+    position: absolute;
+    padding: 0.6rem;
+    top: -8rem;
+    left: 25rem;
+    &:hover {
+      box-shadow: rgba(255, 255, 255, 0.9) 0px 1px 4px;
+    }
+    ul {
+      li {
+        display: flex;
+        color: aliceblue;
+        p {
+          margin-top: 1rem;
+        }
+        img {
+          width: 3rem;
+          height: 3rem;
+          margin: 0.4rem;
+        }
+      }
+    }
+  }
+}

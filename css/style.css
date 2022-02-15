@@ -245,6 +245,10 @@ select {
       -webkit-background-clip: text;
       background-color: #333; }
 
+/* line 52, sass/layout/_footer.scss */
+.footer__playlist {
+  margin-top: 10rem; }
+
 /* line 2, sass/base/_typography.scss */
 .section__flow-box {
   padding-top: 1.5rem; }
@@ -671,6 +675,55 @@ select {
     /* line 30, sass/pages/_albom.scss */
     .albom div i:hover {
       color: crimson; }
+
+/* line 1, sass/pages/_myPlaylist.scss */
+.card__active {
+  border: 1px solid #fff;
+  padding: 6rem 0;
+  height: 16rem;
+  border-radius: 1rem;
+  transition: all 0.6s;
+  margin-bottom: 7rem; }
+  /* line 9, sass/pages/_myPlaylist.scss */
+  .card__active i {
+    transition: all 0.6s;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+    padding: 1rem; }
+  /* line 16, sass/pages/_myPlaylist.scss */
+  .card__active:hover {
+    box-shadow: rgba(255, 255, 255, 0.9) 0px 1px 4px; }
+    /* line 17, sass/pages/_myPlaylist.scss */
+    .card__active:hover i {
+      background-color: aqua; }
+
+/* line 24, sass/pages/_myPlaylist.scss */
+.footer__playlist {
+  position: relative; }
+  /* line 26, sass/pages/_myPlaylist.scss */
+  .footer__playlist--plus {
+    border-radius: 1rem;
+    background-color: #393a3c;
+    position: absolute;
+    padding: 0.6rem;
+    top: -8rem;
+    left: 25rem; }
+    /* line 33, sass/pages/_myPlaylist.scss */
+    .footer__playlist--plus:hover {
+      box-shadow: rgba(255, 255, 255, 0.9) 0px 1px 4px; }
+    /* line 37, sass/pages/_myPlaylist.scss */
+    .footer__playlist--plus ul li {
+      display: flex;
+      color: aliceblue; }
+      /* line 40, sass/pages/_myPlaylist.scss */
+      .footer__playlist--plus ul li p {
+        margin-top: 1rem; }
+      /* line 43, sass/pages/_myPlaylist.scss */
+      .footer__playlist--plus ul li img {
+        width: 3rem;
+        height: 3rem;
+        margin: 0.4rem; }
 
 /* line 1, sass/components/icons.scss */
 .icon {
