@@ -108,6 +108,10 @@ select {
   background-size: cover;
   background-repeat: no-repeat; }
 
+/* line 60, sass/base/_reset.scss */
+.body__myPlaylist {
+  background-color: #161a1a; }
+
 /* line 2, sass/layout/_navigation.scss */
 .landing__nav {
   display: flex;
