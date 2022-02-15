@@ -101,6 +101,13 @@ select {
 .body__releases {
   background-color: #161a1a; }
 
+/* line 54, sass/base/_reset.scss */
+.body__artist {
+  background-image: url(/images/orqa.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 /* line 2, sass/layout/_navigation.scss */
 .landing__nav {
   display: flex;
@@ -435,6 +442,35 @@ select {
   border: none;
   opacity: 0.7; }
 
+/* line 213, sass/base/_typography.scss */
+.playlist__link {
+  margin-top: 1rem;
+  transition: all 0.5s ease-in-out; }
+  /* line 216, sass/base/_typography.scss */
+  .playlist__link a {
+    color: #fff;
+    font-size: 1.4rem;
+    position: relative;
+    margin-right: 1.4rem;
+    transition: all 0.5s ease-in-out; }
+    /* line 222, sass/base/_typography.scss */
+    .playlist__link a::after {
+      transition: all 0.5s ease-in-out;
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      content: "";
+      width: 0;
+      height: 0.2rem;
+      background-color: #5f61e3; }
+    /* line 232, sass/base/_typography.scss */
+    .playlist__link a:hover::after {
+      width: 100%; }
+
+/* line 237, sass/base/_typography.scss */
+.heading {
+  margin-left: 3rem; }
+
 /* line 3, sass/pages/_landing.scss */
 .section__flow {
   width: 95vw;
@@ -744,3 +780,10 @@ select {
   /* line 47, sass/components/_buttons.scss */
   .btn_universal:hover {
     background-image: linear-gradient(to right, #2da7f8, #5f61e3); }
+
+/* line 51, sass/components/_buttons.scss */
+.artist_btn {
+  display: block;
+  margin: 4rem auto;
+  width: 20rem;
+  text-align: center; }

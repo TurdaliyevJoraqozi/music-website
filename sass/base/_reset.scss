@@ -51,4 +51,10 @@ select {
   &__releases {
     background-color: #161a1a;
   }
+  &__artist {
+    background-image: url(/images/orqa.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
