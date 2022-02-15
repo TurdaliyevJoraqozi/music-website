@@ -112,6 +112,10 @@ select {
 .body__myPlaylist {
   background-color: #161a1a; }
 
+/* line 63, sass/base/_reset.scss */
+.body__history {
+  background-color: #161a1a; }
+
 /* line 2, sass/layout/_navigation.scss */
 .landing__nav {
   display: flex;
@@ -578,26 +582,27 @@ select {
     /* line 52, sass/pages/_playlist.scss */
     .songs .colum1 img {
       margin-top: -1.5rem;
-      margin-right: 0.8rem; }
-  /* line 59, sass/pages/_playlist.scss */
+      margin-right: 0.8rem;
+      margin-left: 0.8rem; }
+  /* line 60, sass/pages/_playlist.scss */
   .songs:hover {
     background-color: rgba(255, 255, 255, 0.293);
     transition: all 0.6s; }
-    /* line 62, sass/pages/_playlist.scss */
+    /* line 63, sass/pages/_playlist.scss */
     .songs:hover div {
       color: rgba(255, 255, 255, 0.973); }
-  /* line 66, sass/pages/_playlist.scss */
+  /* line 67, sass/pages/_playlist.scss */
   .songs div:not(:first-child) {
     text-align: right; }
-  /* line 69, sass/pages/_playlist.scss */
+  /* line 70, sass/pages/_playlist.scss */
   .songs div {
     color: #fff;
     font-size: 1.4rem; }
-    /* line 72, sass/pages/_playlist.scss */
+    /* line 73, sass/pages/_playlist.scss */
     .songs div span {
       color: #fff;
       opacity: 0.5; }
-    /* line 77, sass/pages/_playlist.scss */
+    /* line 78, sass/pages/_playlist.scss */
     .songs div i:hover {
       color: crimson; }
 
