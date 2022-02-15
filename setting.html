@@ -14,5 +14,173 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Setting</title>
   </head>
-  <body></body>
+  <body class="body__setting">
+    <header>
+      <nav>
+        <div class="home__nav podcast__nav">
+          <div class="home__nav--left">
+            <div class="logo">
+              <img src="./images/landing__logo.PNG" alt="landing__logo.PNG" />
+            </div>
+            <div class="home__nav--left--list">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Browse</a></li>
+                <li><a href="#" class="active">Library</a></li>
+              </ul>
+            </div>
+            <div class="home__nav--left--list middle middle--setting">
+              <ul>
+                <li><a href="#">Account/Settings</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="home__nav--right">
+            <input type="search" placeholder="search " />
+            <i class="fa-solid fa-user"></i>
+            <select name="" id="">
+              <option value=""><a href="#">John Doe</a></option>
+              <option value=""><a href="#">John Doe</a></option>
+              <option value=""><a href="#">John Doe</a></option>
+              <option value=""><a href="#">John Doe</a></option>
+            </select>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="section__setting">
+        <div class="grid2 my__account">
+          <div class="my__account--img">
+            <i class="fa-solid fa-user"></i>
+            <div>
+              <h3>John Doe</h3>
+              <p>Free Account</p>
+            </div>
+          </div>
+          <div>
+            <a class="btn_universal artist_btn" href="#">SHOW MORE</a>
+          </div>
+        </div>
+        <div class="more">
+          <div class="setting--title">Contact</div>
+        </div>
+        <div class="form-inputs">
+          <div class="grid2 setting__input--1">
+            <div class="input__item">
+              <label for="name">First Name</label>
+              <input required type="text" placeholder="John" id="name" />
+            </div>
+            <div class="input__item">
+              <label for="name">Last Name</label>
+              <input required type="text" placeholder="Doe" id="name" />
+            </div>
+          </div>
+          <div class="grid1 setting__input--2">
+            <div class="input__item">
+              <label for="name">Email</label>
+              <input
+                required
+                type="email"
+                placeholder="RandomExample@gmail.com"
+                id="name"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-selects">
+          <div class="grid2 setting__select--1">
+            <div class="setting__select">
+              <label for="select--1">Gender</label>
+              <select id="select--1">
+                <option value="">Male</option>
+                <option value="">Woman</option>
+              </select>
+            </div>
+            <div class="setting__select">
+              <label for="select--1">Country</label>
+              <select id="select--1">
+                <option value="">Ukraine</option>
+                <option value="">Russian</option>
+                <option value="">Uzbekistan</option>
+              </select>
+            </div>
+          </div>
+          <div class="grid3 setting__select--2">
+            <div class="setting__select">
+              <label for="select--1">Date of Birth</label>
+              <select id="select--1">
+                <option value="">1</option>
+                <option value="">Woman</option>
+              </select>
+            </div>
+            <div class="setting__select">
+              <label for="select--1">Month</label>
+              <select id="select--1">
+                <option value="">February</option>
+                <option value="">Russian</option>
+                <option value="">Uzbekistan</option>
+              </select>
+            </div>
+            <div class="setting__select">
+              <label for="select--1">Year</label>
+              <select id="select--1">
+                <option value="">1997</option>
+                <option value="">Russian</option>
+                <option value="">Uzbekistan</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="more">
+          <div>Facebook</div>
+          Not Connected
+        </div>
+        <div class="more">
+          <div>Google</div>
+          Not Connected
+        </div>
+      </section>
+      <section class="setting__albom">
+        <div class="setting--title">Streaming</div>
+        <div class="setting__albom--checkbox">
+          <div class="draw"></div>
+          <div class="setting__albom--item">
+            <input type="checkbox" />
+            <span>Normal(128kb/s)</span>
+          </div>
+          <div class="setting__albom--item">
+            <input type="checkbox" />
+            <span>Hight(192kb/s)</span>
+          </div>
+          <div class="setting__albom--item">
+            <input type="checkbox" />
+            <span>Highest(320kb/s)</span>
+          </div>
+          <div class="draw"></div>
+        </div>
+        <div class="setting--title">Account</div>
+        <div class="more">
+          <div>Enable Browser Notification</div>
+          <div>
+            <input type="checkbox" />
+            <select id="">
+              <option value="">English</option>
+              <option value="">Russian</option>
+              <option value="">Uzbek</option>
+            </select>
+          </div>
+        </div>
+        <ul class="account__list">
+          <li><a href="#">Language</a></li>
+          <li><a href="#">Change password</a></li>
+          <li><a href="#">Add new account</a></li>
+          <li><span>Terms and Conditions</span></li>
+          <li><span>Privacy Polisy</span></li>
+          <li><span>Support</span></li>
+        </ul>
+        <a class="btn_universal artist_btn" href="#">LOG OUT</a>
+      </section>
+    </main>
+  </body>
 </html>

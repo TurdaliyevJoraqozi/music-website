@@ -1,0 +1,75 @@
+.my__account {
+  &--img {
+    display: flex;
+    margin-top: 2.5rem;
+    i {
+      color: #fff;
+      font-size: 4rem;
+      margin-right: 2rem;
+      transition: all 0.6s;
+      &:hover {
+        background-image: linear-gradient(to right, #2da7f8, #5f61e3);
+        color: transparent;
+        display: inline-block;
+        background-clip: text;
+        -webkit-background-clip: text;
+      }
+    }
+    color: #fff;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.7rem;
+  }
+}
+.input__item,
+.setting__select {
+  display: flex;
+  flex-direction: column;
+  label {
+    color: rgba(255, 255, 255, 0.459);
+    font-size: 1.4rem;
+    margin: 1rem 0;
+  }
+  input,
+  select {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.459);
+    padding: 1rem 0;
+    color: #fff;
+    ::placeholder {
+      color: #fff;
+    }
+  }
+}
+.setting--title {
+  color: #fff;
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+.setting__albom--item {
+  margin: 1.4rem 0;
+  input {
+    border-radius: 50%;
+  }
+  span {
+    color: rgba(255, 255, 255, 0.473);
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+}
+.account__list {
+  li {
+    font-size: 1.4rem;
+    margin: 1.4rem 0;
+    a {
+      color: #fff;
+    }
+    span {
+      color: rgba(255, 255, 255, 0.623);
+    }
+  }
+}

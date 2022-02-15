@@ -1,39 +1,45 @@
 /* line 1, sass/layout/_grid.scss */
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%; }
+
+/* line 6, sass/layout/_grid.scss */
 .grid2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3rem; }
 
-/* line 6, sass/layout/_grid.scss */
+/* line 11, sass/layout/_grid.scss */
 .grid2-gap5 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 0.5rem; }
 
-/* line 11, sass/layout/_grid.scss */
+/* line 16, sass/layout/_grid.scss */
 .flex1 {
   display: flex;
   justify-content: space-between; }
 
-/* line 15, sass/layout/_grid.scss */
+/* line 20, sass/layout/_grid.scss */
 .grid3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem; }
 
-/* line 20, sass/layout/_grid.scss */
+/* line 25, sass/layout/_grid.scss */
 .grid4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 2rem; }
 
-/* line 25, sass/layout/_grid.scss */
+/* line 30, sass/layout/_grid.scss */
 .grid5 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 1.5rem; }
 
-/* line 30, sass/layout/_grid.scss */
+/* line 35, sass/layout/_grid.scss */
 .grid6 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -118,6 +124,10 @@ select {
 
 /* line 66, sass/base/_reset.scss */
 .body__Mypodcast {
+  background-color: #161a1a; }
+
+/* line 69, sass/base/_reset.scss */
+.body__setting {
   background-color: #161a1a; }
 
 /* line 2, sass/layout/_navigation.scss */
@@ -365,26 +375,28 @@ select {
   margin: 2.6rem 0; }
   /* line 114, sass/base/_typography.scss */
   .more p {
+    font-weight: 900;
+    font-size: 1.6rem;
     cursor: pointer;
     transition: 0.5s ease-in-out; }
-    /* line 117, sass/base/_typography.scss */
+    /* line 119, sass/base/_typography.scss */
     .more p:hover {
       background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
       color: transparent;
       background-clip: text;
       -webkit-background-clip: text; }
-  /* line 124, sass/base/_typography.scss */
+  /* line 126, sass/base/_typography.scss */
   .more i {
     cursor: pointer;
     transition: 0.5s ease-in-out; }
-    /* line 127, sass/base/_typography.scss */
+    /* line 129, sass/base/_typography.scss */
     .more i:hover {
       background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
       color: transparent;
       background-clip: text;
       -webkit-background-clip: text; }
 
-/* line 136, sass/base/_typography.scss */
+/* line 138, sass/base/_typography.scss */
 .play img {
   display: block;
   margin: 6rem auto;
@@ -392,13 +404,13 @@ select {
   height: 6rem;
   width: 95vw; }
 
-/* line 147, sass/base/_typography.scss */
+/* line 149, sass/base/_typography.scss */
 .music__podcast div img,
 .music__types div img {
   width: 17rem;
   height: 10rem; }
 
-/* line 154, sass/base/_typography.scss */
+/* line 156, sass/base/_typography.scss */
 .landing__header-description {
   color: #fff;
   display: flex;
@@ -406,51 +418,51 @@ select {
   justify-content: center;
   align-items: center;
   margin-top: 15rem; }
-  /* line 161, sass/base/_typography.scss */
+  /* line 163, sass/base/_typography.scss */
   .landing__header-description h2 {
     font-size: 2.6rem;
     font-weight: 900;
     margin-bottom: 2rem; }
-  /* line 167, sass/base/_typography.scss */
+  /* line 169, sass/base/_typography.scss */
   .landing__header-description p {
     margin-top: 4rem; }
-    /* line 169, sass/base/_typography.scss */
+    /* line 171, sass/base/_typography.scss */
     .landing__header-description p span {
       color: blue; }
 
-/* line 175, sass/base/_typography.scss */
+/* line 177, sass/base/_typography.scss */
 .middle {
   margin-left: 9rem; }
 
-/* line 178, sass/base/_typography.scss */
+/* line 180, sass/base/_typography.scss */
 .this__week {
   margin-top: 4rem; }
 
-/* line 182, sass/base/_typography.scss */
+/* line 184, sass/base/_typography.scss */
 .flex1 div {
   text-align: center;
   margin-right: 2rem; }
-  /* line 185, sass/base/_typography.scss */
+  /* line 187, sass/base/_typography.scss */
   .flex1 div p {
     color: #fff;
     font-size: 1.2rem; }
-  /* line 189, sass/base/_typography.scss */
+  /* line 191, sass/base/_typography.scss */
   .flex1 div span {
     color: rgba(240, 248, 255, 0.432); }
 
-/* line 194, sass/base/_typography.scss */
+/* line 196, sass/base/_typography.scss */
 .feature_items {
   margin: 3rem 0; }
 
-/* line 198, sass/base/_typography.scss */
+/* line 200, sass/base/_typography.scss */
 .more div {
   opacity: 0.7;
   display: flex; }
-  /* line 201, sass/base/_typography.scss */
+  /* line 203, sass/base/_typography.scss */
   .more div i {
     margin-right: 2rem; }
 
-/* line 205, sass/base/_typography.scss */
+/* line 207, sass/base/_typography.scss */
 .more select,
 .more input {
   background-color: transparent;
@@ -458,18 +470,18 @@ select {
   border: none;
   opacity: 0.7; }
 
-/* line 213, sass/base/_typography.scss */
+/* line 215, sass/base/_typography.scss */
 .playlist__link {
   margin-top: 1rem;
   transition: all 0.5s ease-in-out; }
-  /* line 216, sass/base/_typography.scss */
+  /* line 218, sass/base/_typography.scss */
   .playlist__link a {
     color: #fff;
     font-size: 1.4rem;
     position: relative;
     margin-right: 1.4rem;
     transition: all 0.5s ease-in-out; }
-    /* line 222, sass/base/_typography.scss */
+    /* line 224, sass/base/_typography.scss */
     .playlist__link a::after {
       transition: all 0.5s ease-in-out;
       position: absolute;
@@ -479,13 +491,20 @@ select {
       width: 0;
       height: 0.2rem;
       background-color: #5f61e3; }
-    /* line 232, sass/base/_typography.scss */
+    /* line 234, sass/base/_typography.scss */
     .playlist__link a:hover::after {
       width: 100%; }
 
-/* line 237, sass/base/_typography.scss */
+/* line 239, sass/base/_typography.scss */
 .heading {
   margin-left: 3rem; }
+
+/* line 243, sass/base/_typography.scss */
+.draw {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.363);
+  margin: 2rem 0; }
 
 /* line 3, sass/pages/_landing.scss */
 .section__flow {
@@ -733,6 +752,90 @@ select {
         width: 3rem;
         height: 3rem;
         margin: 0.4rem; }
+
+/* line 2, sass/pages/_setting.scss */
+.my__account--img {
+  display: flex;
+  margin-top: 2.5rem;
+  color: #fff; }
+  /* line 5, sass/pages/_setting.scss */
+  .my__account--img i {
+    color: #fff;
+    font-size: 4rem;
+    margin-right: 2rem;
+    transition: all 0.6s; }
+    /* line 10, sass/pages/_setting.scss */
+    .my__account--img i:hover {
+      background-image: linear-gradient(to right, #2da7f8, #5f61e3);
+      color: transparent;
+      display: inline-block;
+      background-clip: text;
+      -webkit-background-clip: text; }
+
+/* line 20, sass/pages/_setting.scss */
+.my__account h3 {
+  font-size: 1.8rem; }
+
+/* line 23, sass/pages/_setting.scss */
+.my__account p {
+  font-size: 1.7rem; }
+
+/* line 27, sass/pages/_setting.scss */
+.input__item,
+.setting__select {
+  display: flex;
+  flex-direction: column; }
+  /* line 31, sass/pages/_setting.scss */
+  .input__item label,
+  .setting__select label {
+    color: rgba(255, 255, 255, 0.459);
+    font-size: 1.4rem;
+    margin: 1rem 0; }
+  /* line 36, sass/pages/_setting.scss */
+  .input__item input,
+  .input__item select,
+  .setting__select input,
+  .setting__select select {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.459);
+    padding: 1rem 0;
+    color: #fff; }
+    /* line 43, sass/pages/_setting.scss */
+    .input__item input ::placeholder,
+    .input__item select ::placeholder,
+    .setting__select input ::placeholder,
+    .setting__select select ::placeholder {
+      color: #fff; }
+
+/* line 48, sass/pages/_setting.scss */
+.setting--title {
+  color: #fff;
+  font-size: 1.9rem;
+  font-weight: 800; }
+
+/* line 53, sass/pages/_setting.scss */
+.setting__albom--item {
+  margin: 1.4rem 0; }
+  /* line 55, sass/pages/_setting.scss */
+  .setting__albom--item input {
+    border-radius: 50%; }
+  /* line 58, sass/pages/_setting.scss */
+  .setting__albom--item span {
+    color: rgba(255, 255, 255, 0.473);
+    font-size: 1.3rem;
+    margin-left: 1rem; }
+
+/* line 65, sass/pages/_setting.scss */
+.account__list li {
+  font-size: 1.4rem;
+  margin: 1.4rem 0; }
+  /* line 68, sass/pages/_setting.scss */
+  .account__list li a {
+    color: #fff; }
+  /* line 71, sass/pages/_setting.scss */
+  .account__list li span {
+    color: rgba(255, 255, 255, 0.623); }
 
 /* line 1, sass/components/icons.scss */
 .icon {
