@@ -130,6 +130,10 @@ select {
 .body__setting {
   background-color: #161a1a; }
 
+/* line 72, sass/base/_reset.scss */
+.body__createPlaylist {
+  background-color: #161a1a; }
+
 /* line 2, sass/layout/_navigation.scss */
 .landing__nav {
   display: flex;
@@ -266,6 +270,10 @@ select {
 /* line 52, sass/layout/_footer.scss */
 .footer__playlist {
   margin-top: 10rem; }
+
+/* line 55, sass/layout/_footer.scss */
+.footer__create--playlist {
+  padding: 4rem 0; }
 
 /* line 2, sass/base/_typography.scss */
 .section__flow-box {
@@ -505,6 +513,29 @@ select {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.363);
   margin: 2rem 0; }
+
+/* line 249, sass/base/_typography.scss */
+.search__playlist {
+  margin: 0;
+  margin-top: 2rem; }
+
+/* line 253, sass/base/_typography.scss */
+.essential {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  padding: 0.4rem 2rem;
+  font-size: 1.5rem; }
+
+/* line 260, sass/base/_typography.scss */
+.add_btn {
+  width: 6.5rem;
+  text-align: center;
+  margin-left: 20rem;
+  margin-bottom: 1rem; }
+  /* line 265, sass/base/_typography.scss */
+  .add_btn:hover {
+    background-image: linear-gradient(#5353e0, #222274); }
 
 /* line 3, sass/pages/_landing.scss */
 .section__flow {
@@ -836,6 +867,20 @@ select {
   /* line 71, sass/pages/_setting.scss */
   .account__list li span {
     color: rgba(255, 255, 255, 0.623); }
+
+/* line 1, sass/pages/_creteatePlaylist.scss */
+.search__playlist {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-left: 14rem; }
+  /* line 6, sass/pages/_creteatePlaylist.scss */
+  .search__playlist select,
+  .search__playlist input {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    opacity: 0.7; }
 
 /* line 1, sass/components/icons.scss */
 .icon {
