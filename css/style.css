@@ -116,6 +116,10 @@ select {
 .body__history {
   background-color: #161a1a; }
 
+/* line 66, sass/base/_reset.scss */
+.body__Mypodcast {
+  background-color: #161a1a; }
+
 /* line 2, sass/layout/_navigation.scss */
 .landing__nav {
   display: flex;
