@@ -6,6 +6,25 @@
     background-color: $section-background;
     display: block;
     margin: 0 auto;
+    &--icon {
+      transition: all 0.6s;
+      transform: translateX(-4rem);
+    }
+    &-box--img {
+      transform: scale(0.7);
+      transition: all 0.7s;
+      width: 35rem;
+      height: 35rem;
+      margin-top: 5rem;
+    }
+    &:hover {
+      .section__flow-box--img {
+        transform: scale(1);
+      }
+      .section__flow--icon {
+        transform: translateX(-1rem);
+      }
+    }
   }
   &__listen {
     width: 95vw;
@@ -23,18 +42,72 @@
     background-color: $section-background;
     display: block;
     margin: 0 auto;
+    &-box--img {
+      transform: rotateY(-180deg);
+      transition: all 0.6s;
+    }
+    &-box--img {
+      &:hover {
+        transform: rotateY(0deg);
+      }
+    }
   }
   &__premium {
     width: 95vw;
-    height: 90vh;
+    height: 100vh;
     background-color: $section-background;
     display: block;
     margin: 0 auto;
     padding: 0 10rem;
-
+    overflow: hidden;
     &-icons {
       padding: 0 6rem;
       margin-top: 4rem;
     }
   }
+}
+.icon {
+  i {
+    transform: scale(0.6);
+    transition: all 0.6s;
+    margin-bottom: 1rem;
+  }
+}
+.icon {
+  i {
+    &:hover {
+      transform: scale(0.8);
+      box-shadow: rgb(247, 247, 247) 0px 7px 29px 0px;
+    }
+  }
+}
+.musicbox--card--1 {
+  animation-name: card-1;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+.musicbox--card--2 {
+  animation-name: card-2;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+@keyframes card-1 {
+  0% {
+    transform: translateX(-60rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes card-2 {
+  0% {
+    transform: translateX(60rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.comment__list--2 select {
+  background-color: transparent;
+  color: #fff;
 }

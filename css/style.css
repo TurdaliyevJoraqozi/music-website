@@ -175,7 +175,7 @@ select {
           background-color: #fff;
           transition: all 0.4s ease-in-out;
           color: rgba(129, 5, 109, 0.959);
-          padding: 0.8rem 1rem;
+          padding: 0.3rem 1rem;
           border-radius: 0.8rem;
           border: 1px solid #fff; }
           /* line 21, sass/layout/_navigation.scss */
@@ -257,6 +257,7 @@ select {
 .landing__header {
   width: 95vw;
   height: 100vh;
+  opacity: 0.99;
   background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.274)), url(/images/landing__header.jpg);
   background-position: center;
   background-size: cover;
@@ -590,8 +591,25 @@ select {
   background-color: #161a1a;
   display: block;
   margin: 0 auto; }
+  /* line 9, sass/pages/_landing.scss */
+  .section__flow--icon {
+    transition: all 0.6s;
+    transform: translateX(-4rem); }
+  /* line 13, sass/pages/_landing.scss */
+  .section__flow-box--img {
+    transform: scale(0.7);
+    transition: all 0.7s;
+    width: 35rem;
+    height: 35rem;
+    margin-top: 5rem; }
+  /* line 21, sass/pages/_landing.scss */
+  .section__flow:hover .section__flow-box--img {
+    transform: scale(1); }
+  /* line 24, sass/pages/_landing.scss */
+  .section__flow:hover .section__flow--icon {
+    transform: translateX(-1rem); }
 
-/* line 10, sass/pages/_landing.scss */
+/* line 29, sass/pages/_landing.scss */
 .section__listen {
   width: 95vw;
   height: 60vh;
@@ -602,26 +620,74 @@ select {
   display: block;
   margin: 0 auto; }
 
-/* line 20, sass/pages/_landing.scss */
+/* line 39, sass/pages/_landing.scss */
 .section__find {
   width: 95vw;
   height: 60vh;
   background-color: #161a1a;
   display: block;
   margin: 0 auto; }
+  /* line 45, sass/pages/_landing.scss */
+  .section__find-box--img {
+    transform: rotateY(-180deg);
+    transition: all 0.6s; }
+  /* line 50, sass/pages/_landing.scss */
+  .section__find-box--img:hover {
+    transform: rotateY(0deg); }
 
-/* line 27, sass/pages/_landing.scss */
+/* line 55, sass/pages/_landing.scss */
 .section__premium {
   width: 95vw;
-  height: 90vh;
+  height: 100vh;
   background-color: #161a1a;
   display: block;
   margin: 0 auto;
-  padding: 0 10rem; }
-  /* line 35, sass/pages/_landing.scss */
+  padding: 0 10rem;
+  overflow: hidden; }
+  /* line 63, sass/pages/_landing.scss */
   .section__premium-icons {
     padding: 0 6rem;
     margin-top: 4rem; }
+
+/* line 70, sass/pages/_landing.scss */
+.icon i {
+  transform: scale(0.6);
+  transition: all 0.6s;
+  margin-bottom: 1rem; }
+
+/* line 78, sass/pages/_landing.scss */
+.icon i:hover {
+  transform: scale(0.8);
+  box-shadow: #f7f7f7 0px 7px 29px 0px; }
+
+/* line 84, sass/pages/_landing.scss */
+.musicbox--card--1 {
+  animation-name: card-1;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1; }
+
+/* line 89, sass/pages/_landing.scss */
+.musicbox--card--2 {
+  animation-name: card-2;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1; }
+
+@keyframes card-1 {
+  0% {
+    transform: translateX(-60rem); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes card-2 {
+  0% {
+    transform: translateX(60rem); }
+  100% {
+    transform: translateX(0); } }
+
+/* line 110, sass/pages/_landing.scss */
+.comment__list--2 select {
+  background-color: transparent;
+  color: #fff; }
 
 /* line 1, sass/pages/_playlist.scss */
 .section__playlist {
