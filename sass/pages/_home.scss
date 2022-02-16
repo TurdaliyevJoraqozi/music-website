@@ -1,4 +1,9 @@
 .flow__img {
+  transform: scale(0.6);
+  transition: all 0.6s;
+  &:hover {
+    transform: scale(1) rotateY(360deg);
+  }
   img {
     height: 20rem;
     width: 35rem;
@@ -6,6 +11,11 @@
   }
 }
 .flow__img--2 {
+  border-radius: 1rem;
+  transition: all 0.6s;
+  &:hover {
+    box-shadow: rgb(255, 253, 253) 0px 3px 8px;
+  }
   text-align: center;
   color: $color-white;
   img {
@@ -29,4 +39,12 @@
 }
 .images__artists {
   margin-bottom: 6rem;
+}
+.music__categories {
+  div {
+    transition: all 1s;
+    &:hover {
+      transform: rotateX(360deg);
+    }
+  }
 }

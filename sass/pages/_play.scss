@@ -8,6 +8,10 @@
   width: 90%;
   background-color: #383a3c;
   height: 5rem;
+  transition: all 0.4s;
+  &:hover {
+    box-shadow: rgb(255, 255, 255) 0px 3px 8px;
+  }
   i {
     font-size: 1.5rem;
     color: #fff;
