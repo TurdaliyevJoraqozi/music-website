@@ -1,0 +1,83 @@
+.play {
+  display: block;
+  padding: 2rem;
+  position: relative;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  background-color: #383a3c;
+  height: 5rem;
+  i {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  i {
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    margin-right: 0.2rem;
+    &:hover {
+      background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
+
+  &--left {
+    display: flex;
+    i {
+      margin-left: 2rem;
+    }
+    img {
+      position: absolute;
+      width: 4rem;
+      height: 4rem;
+      margin: 0;
+      top: 5px;
+      left: 3px;
+    }
+    &--name {
+      margin-left: 4rem;
+      p {
+        color: #fff;
+        font-size: 1.2rem;
+        margin-top: -1rem;
+        margin-bottom: 0.3rem;
+      }
+      span {
+        color: #fff;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &--middle {
+    &--top {
+      margin-top: -1rem;
+    }
+    &--bottom {
+      margin-left: -10rem;
+      margin-top: 1rem;
+      display: flex;
+      &--value {
+        width: 30rem;
+        height: 2px;
+        background-color: #2da7f8;
+      }
+      span {
+        margin-top: -0.6rem;
+        color: #fff;
+      }
+    }
+  }
+  &--right {
+    display: flex;
+    &--value {
+      width: 5rem;
+      height: 2px;
+      background-color: #fcfeff;
+      margin-top: 0.7rem;
+      margin-left: 0.8rem;
+    }
+  }
+}

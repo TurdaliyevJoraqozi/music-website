@@ -145,6 +145,10 @@ select {
 .body__genre {
   background-color: #161a1a; }
 
+/* line 84, sass/base/_reset.scss */
+.body__play {
+  background-color: #161a1a; }
+
 /* line 2, sass/layout/_navigation.scss */
 .landing__nav {
   display: flex;
@@ -584,7 +588,7 @@ select {
 .section__listen {
   width: 95vw;
   height: 60vh;
-  background-image: url(/images/listen-back.PNG);
+  background-image: url(/images/qqqq.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -735,6 +739,10 @@ select {
 /* line 4, sass/pages/_podcast.scss */
 .categories {
   margin: 5rem auto; }
+
+/* line 7, sass/pages/_podcast.scss */
+.music__podcast {
+  margin: 3rem 0; }
 
 /* line 1, sass/pages/_albom.scss */
 .albom {
@@ -1147,6 +1155,87 @@ select {
   .genre__images div img {
     width: 18rem;
     height: 10rem; }
+
+/* line 1, sass/pages/_play.scss */
+.play {
+  display: block;
+  padding: 2rem;
+  position: relative;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  background-color: #383a3c;
+  height: 5rem; }
+  /* line 11, sass/pages/_play.scss */
+  .play i {
+    font-size: 1.5rem;
+    color: #fff; }
+  /* line 15, sass/pages/_play.scss */
+  .play i {
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    margin-right: 0.2rem; }
+    /* line 19, sass/pages/_play.scss */
+    .play i:hover {
+      background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text; }
+  /* line 27, sass/pages/_play.scss */
+  .play--left {
+    display: flex; }
+    /* line 29, sass/pages/_play.scss */
+    .play--left i {
+      margin-left: 2rem; }
+    /* line 32, sass/pages/_play.scss */
+    .play--left img {
+      position: absolute;
+      width: 4rem;
+      height: 4rem;
+      margin: 0;
+      top: 5px;
+      left: 3px; }
+    /* line 40, sass/pages/_play.scss */
+    .play--left--name {
+      margin-left: 4rem; }
+      /* line 42, sass/pages/_play.scss */
+      .play--left--name p {
+        color: #fff;
+        font-size: 1.2rem;
+        margin-top: -1rem;
+        margin-bottom: 0.3rem; }
+      /* line 48, sass/pages/_play.scss */
+      .play--left--name span {
+        color: #fff;
+        font-size: 1.2rem; }
+  /* line 55, sass/pages/_play.scss */
+  .play--middle--top {
+    margin-top: -1rem; }
+  /* line 58, sass/pages/_play.scss */
+  .play--middle--bottom {
+    margin-left: -10rem;
+    margin-top: 1rem;
+    display: flex; }
+    /* line 62, sass/pages/_play.scss */
+    .play--middle--bottom--value {
+      width: 30rem;
+      height: 2px;
+      background-color: #2da7f8; }
+    /* line 67, sass/pages/_play.scss */
+    .play--middle--bottom span {
+      margin-top: -0.6rem;
+      color: #fff; }
+  /* line 73, sass/pages/_play.scss */
+  .play--right {
+    display: flex; }
+    /* line 75, sass/pages/_play.scss */
+    .play--right--value {
+      width: 5rem;
+      height: 2px;
+      background-color: #fcfeff;
+      margin-top: 0.7rem;
+      margin-left: 0.8rem; }
 
 /* line 1, sass/pages/_creteatePlaylist.scss */
 .search__playlist {
