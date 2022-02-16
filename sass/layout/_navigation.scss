@@ -12,9 +12,9 @@
           font-size: 1.8rem;
           color: $color-white;
           span {
-            background-color: $color-white;
+            background-color: #333;
             transition: all 0.4s ease-in-out;
-            color: rgba(129, 5, 109, 0.959);
+            color: rgba(255, 247, 254, 0.959);
             padding: 0.3rem 1rem;
             border-radius: 0.8rem;
             border: 1px solid $color-white;
@@ -46,7 +46,7 @@
 
           a {
             color: $color-white;
-            font-size: 1.6rem;
+            font-size: 1.3rem;
             font-weight: 600;
             &:hover {
               background-image: linear-gradient(to right, #2da7f8, #5f61e3);

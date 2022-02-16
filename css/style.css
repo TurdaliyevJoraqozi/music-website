@@ -87,74 +87,88 @@ select {
 
 /* line 35, sass/base/_reset.scss */
 .body__home__page, .body__podcast__page {
-  background-color: #161a1a; }
+  background-color: #161a1a;
+  font-family: "Montserrat", sans-serif; }
 
-/* line 39, sass/base/_reset.scss */
+/* line 40, sass/base/_reset.scss */
 .body__playlist {
   background-image: url(/images/BG-2.avif);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif; }
 
-/* line 45, sass/base/_reset.scss */
+/* line 47, sass/base/_reset.scss */
 .body__albom {
   background-image: url(/images/BG.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
-
-/* line 51, sass/base/_reset.scss */
-.body__releases {
-  background-color: #161a1a; }
+  background-position: center;
+  font-family: "Montserrat", sans-serif; }
 
 /* line 54, sass/base/_reset.scss */
+.body__releases {
+  background-color: #161a1a;
+  font-family: "Montserrat", sans-serif; }
+
+/* line 58, sass/base/_reset.scss */
 .body__artist {
   background-image: url(/images/orqa.png);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif; }
 
-/* line 60, sass/base/_reset.scss */
+/* line 65, sass/base/_reset.scss */
 .body__myPlaylist {
-  background-color: #161a1a; }
-
-/* line 63, sass/base/_reset.scss */
-.body__history {
-  background-color: #161a1a; }
-
-/* line 66, sass/base/_reset.scss */
-.body__Mypodcast {
-  background-color: #161a1a; }
+  background-color: #161a1a;
+  font-family: "Montserrat", sans-serif; }
 
 /* line 69, sass/base/_reset.scss */
+.body__history {
+  background-color: #161a1a;
+  font-family: "Montserrat", sans-serif; }
+
+/* line 73, sass/base/_reset.scss */
+.body__Mypodcast {
+  background-color: #161a1a;
+  font-family: "Montserrat", sans-serif; }
+
+/* line 77, sass/base/_reset.scss */
 .body__setting {
-  background-color: #161a1a; }
+  background-color: #161a1a;
+  font-family: "Montserrat", sans-serif; }
 
-/* line 72, sass/base/_reset.scss */
+/* line 81, sass/base/_reset.scss */
 .body__createPlaylist {
-  background-color: #161a1a; }
+  background-color: #161a1a;
+  font-family: "Montserrat", sans-serif; }
 
-/* line 75, sass/base/_reset.scss */
+/* line 85, sass/base/_reset.scss */
 .body__signUp {
   background-image: url(/images/BG-22.avif);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  font-family: "Montserrat", sans-serif; }
 
-/* line 81, sass/base/_reset.scss */
+/* line 92, sass/base/_reset.scss */
 .body__genre {
-  background-color: #161a1a; }
+  background-color: #161a1a;
+  font-family: "Montserrat", sans-serif; }
 
-/* line 84, sass/base/_reset.scss */
+/* line 96, sass/base/_reset.scss */
 .body__play {
-  background-color: #161a1a; }
+  background-color: #161a1a;
+  font-family: "Montserrat", sans-serif; }
 
-/* line 87, sass/base/_reset.scss */
+/* line 100, sass/base/_reset.scss */
 .body__ovewiev {
   background-image: url(/images/BGartist.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  font-family: "Montserrat", sans-serif; }
 
 /* line 2, sass/layout/_navigation.scss */
 .landing__nav {
@@ -172,9 +186,9 @@ select {
         color: #fff; }
         /* line 14, sass/layout/_navigation.scss */
         .landing__nav .landing__nav-menus ul li a span {
-          background-color: #fff;
+          background-color: #333;
           transition: all 0.4s ease-in-out;
-          color: rgba(129, 5, 109, 0.959);
+          color: rgba(255, 247, 254, 0.959);
           padding: 0.3rem 1rem;
           border-radius: 0.8rem;
           border: 1px solid #fff; }
@@ -203,7 +217,7 @@ select {
         /* line 47, sass/layout/_navigation.scss */
         .home__nav .home__nav--left--list ul li a {
           color: #fff;
-          font-size: 1.6rem;
+          font-size: 1.3rem;
           font-weight: 600; }
           /* line 51, sass/layout/_navigation.scss */
           .home__nav .home__nav--left--list ul li a:hover {
@@ -258,7 +272,7 @@ select {
   width: 95vw;
   height: 100vh;
   opacity: 0.99;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.274)), url(/images/landing__header.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.274)), url(/images/LLLLLS.avif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -594,23 +608,22 @@ select {
   margin: 0 auto; }
   /* line 9, sass/pages/_landing.scss */
   .section__flow--icon {
-    transition: all 0.6s;
-    transform: translateX(-4rem); }
-  /* line 13, sass/pages/_landing.scss */
+    transition: all 0.6s; }
+  /* line 12, sass/pages/_landing.scss */
   .section__flow-box--img {
     transform: scale(0.7);
     transition: all 0.7s;
     width: 35rem;
     height: 35rem;
     margin-top: 5rem; }
-  /* line 21, sass/pages/_landing.scss */
+  /* line 20, sass/pages/_landing.scss */
   .section__flow:hover .section__flow-box--img {
     transform: scale(1); }
-  /* line 24, sass/pages/_landing.scss */
+  /* line 23, sass/pages/_landing.scss */
   .section__flow:hover .section__flow--icon {
     transform: translateX(-1rem); }
 
-/* line 29, sass/pages/_landing.scss */
+/* line 28, sass/pages/_landing.scss */
 .section__listen {
   width: 95vw;
   height: 60vh;
@@ -621,22 +634,22 @@ select {
   display: block;
   margin: 0 auto; }
 
-/* line 39, sass/pages/_landing.scss */
+/* line 38, sass/pages/_landing.scss */
 .section__find {
   width: 95vw;
   height: 60vh;
   background-color: #161a1a;
   display: block;
   margin: 0 auto; }
-  /* line 45, sass/pages/_landing.scss */
+  /* line 44, sass/pages/_landing.scss */
   .section__find-box--img {
     transform: rotateY(-180deg);
     transition: all 0.6s; }
-  /* line 50, sass/pages/_landing.scss */
+  /* line 49, sass/pages/_landing.scss */
   .section__find-box--img:hover {
     transform: rotateY(0deg); }
 
-/* line 55, sass/pages/_landing.scss */
+/* line 54, sass/pages/_landing.scss */
 .section__premium {
   width: 95vw;
   height: 100vh;
@@ -645,29 +658,29 @@ select {
   margin: 0 auto;
   padding: 0 10rem;
   overflow: hidden; }
-  /* line 63, sass/pages/_landing.scss */
+  /* line 62, sass/pages/_landing.scss */
   .section__premium-icons {
     padding: 0 6rem;
     margin-top: 4rem; }
 
-/* line 70, sass/pages/_landing.scss */
+/* line 69, sass/pages/_landing.scss */
 .icon i {
   transform: scale(0.6);
   transition: all 0.6s;
   margin-bottom: 1rem; }
 
-/* line 78, sass/pages/_landing.scss */
+/* line 77, sass/pages/_landing.scss */
 .icon i:hover {
   transform: scale(0.8);
   box-shadow: #f7f7f7 0px 7px 29px 0px; }
 
-/* line 84, sass/pages/_landing.scss */
+/* line 83, sass/pages/_landing.scss */
 .musicbox--card--1 {
   animation-name: card-1;
   animation-duration: 1.5s;
   animation-iteration-count: 1; }
 
-/* line 89, sass/pages/_landing.scss */
+/* line 88, sass/pages/_landing.scss */
 .musicbox--card--2 {
   animation-name: card-2;
   animation-duration: 1.5s;
@@ -685,7 +698,7 @@ select {
   100% {
     transform: translateX(0); } }
 
-/* line 110, sass/pages/_landing.scss */
+/* line 109, sass/pages/_landing.scss */
 .comment__list--2 select {
   background-color: transparent;
   color: #fff; }
@@ -824,6 +837,10 @@ select {
   /* line 46, sass/pages/_home.scss */
   .music__categories div:hover {
     transform: rotateX(360deg); }
+
+/* line 51, sass/pages/_home.scss */
+.categories-row__1 {
+  margin-top: 4rem; }
 
 /* line 1, sass/pages/_podcast.scss */
 .feature {
@@ -1044,7 +1061,7 @@ select {
     /* line 36, sass/pages/_signUp.scss */
     .signUp__aplication .facebook i,
     .signUp__aplication .google i {
-      margin-right: 2rem; }
+      margin-right: 1rem; }
   /* line 40, sass/pages/_signUp.scss */
   .signUp__aplication .google {
     background-color: #fff;
@@ -1138,11 +1155,22 @@ select {
   position: absolute;
   font-size: 1.5rem;
   top: 1rem;
-  right: 1rem; }
-  /* line 131, sass/pages/_signUp.scss */
+  right: 1rem;
+  animation-name: close;
+  animation-iteration-count: infinite;
+  animation-duration: 2s; }
+  /* line 134, sass/pages/_signUp.scss */
   .signUp__close:hover {
     color: red;
     cursor: pointer; }
+
+@keyframes close {
+  0% {
+    transform: scale(0.8); }
+  50% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.2); } }
 
 /* line 2, sass/pages/_loginIn.scss */
 .loginIn__card {
@@ -1254,38 +1282,40 @@ select {
   display: block;
   padding: 2rem;
   position: relative;
-  margin: 5rem auto;
   display: flex;
   justify-content: space-between;
   width: 90%;
   background-color: #383a3c;
   height: 5rem;
-  transition: all 0.4s; }
-  /* line 12, sass/pages/_play.scss */
+  transition: all 0.4s;
+  position: fixed;
+  bottom: 1rem;
+  left: 8rem; }
+  /* line 16, sass/pages/_play.scss */
   .play:hover {
     box-shadow: white 0px 3px 8px; }
-  /* line 15, sass/pages/_play.scss */
+  /* line 19, sass/pages/_play.scss */
   .play i {
     font-size: 1.5rem;
     color: #fff; }
-  /* line 19, sass/pages/_play.scss */
+  /* line 23, sass/pages/_play.scss */
   .play i {
     cursor: pointer;
     transition: 0.5s ease-in-out;
     margin-right: 0.2rem; }
-    /* line 23, sass/pages/_play.scss */
+    /* line 27, sass/pages/_play.scss */
     .play i:hover {
       background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
       color: transparent;
       background-clip: text;
       -webkit-background-clip: text; }
-  /* line 31, sass/pages/_play.scss */
+  /* line 35, sass/pages/_play.scss */
   .play--left {
     display: flex; }
-    /* line 33, sass/pages/_play.scss */
+    /* line 37, sass/pages/_play.scss */
     .play--left i {
       margin-left: 2rem; }
-    /* line 36, sass/pages/_play.scss */
+    /* line 40, sass/pages/_play.scss */
     .play--left img {
       position: absolute;
       width: 4rem;
@@ -1293,40 +1323,40 @@ select {
       margin: 0;
       top: 5px;
       left: 3px; }
-    /* line 44, sass/pages/_play.scss */
+    /* line 48, sass/pages/_play.scss */
     .play--left--name {
       margin-left: 4rem; }
-      /* line 46, sass/pages/_play.scss */
+      /* line 50, sass/pages/_play.scss */
       .play--left--name p {
         color: #fff;
         font-size: 1.2rem;
         margin-top: -1rem;
         margin-bottom: 0.3rem; }
-      /* line 52, sass/pages/_play.scss */
+      /* line 56, sass/pages/_play.scss */
       .play--left--name span {
         color: #fff;
         font-size: 1.2rem; }
-  /* line 59, sass/pages/_play.scss */
+  /* line 63, sass/pages/_play.scss */
   .play--middle--top {
     margin-top: -1rem; }
-  /* line 62, sass/pages/_play.scss */
+  /* line 66, sass/pages/_play.scss */
   .play--middle--bottom {
     margin-left: -10rem;
     margin-top: 1rem;
     display: flex; }
-    /* line 66, sass/pages/_play.scss */
+    /* line 70, sass/pages/_play.scss */
     .play--middle--bottom--value {
       width: 30rem;
       height: 2px;
       background-color: #2da7f8; }
-    /* line 71, sass/pages/_play.scss */
+    /* line 75, sass/pages/_play.scss */
     .play--middle--bottom span {
       margin-top: -0.6rem;
       color: #fff; }
-  /* line 77, sass/pages/_play.scss */
+  /* line 81, sass/pages/_play.scss */
   .play--right {
     display: flex; }
-    /* line 79, sass/pages/_play.scss */
+    /* line 83, sass/pages/_play.scss */
     .play--right--value {
       width: 5rem;
       height: 2px;
@@ -1352,6 +1382,30 @@ select {
     border: none;
     opacity: 0.7; }
 
+/* line 14, sass/pages/_creteatePlaylist.scss */
+.header__playlist--left img {
+  animation-name: playlist_img;
+  animation-duration: 1s;
+  animation-iteration-count: infinite; }
+
+@keyframes playlist_img {
+  0% {
+    box-shadow: rgba(253, 2, 232, 0.25) 0px 54px 55px, rgba(253, 2, 232, 0.25) 0px -12px 30px, rgba(253, 2, 232, 0.25) 0px 4px 6px, rgba(253, 2, 232, 0.25) 0px 12px 13px, rgba(253, 2, 232, 0.25) 0px -3px 5px; }
+  100% {
+    box-shadow: rgba(0, 252, 218, 0.19) 0px 54px 55px, rgba(0, 252, 218, 0.19) 0px -12px 30px, rgba(0, 252, 218, 0.19) 0px 4px 6px, rgba(0, 252, 218, 0.19) 0px 12px 13px, rgba(0, 252, 218, 0.19) 0px -3px 5px; } }
+
+/* line 1, sass/pages/_genrePlaylist.scss */
+.rock__title {
+  animation-name: rock;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+@keyframes rock {
+  0% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
 /* line 1, sass/pages/_modal.scss */
 .modal {
   position: absolute;
@@ -1362,75 +1416,84 @@ select {
   height: 80vh;
   padding: 1rem;
   border-radius: 0.6rem;
-  color: #fff; }
-  /* line 11, sass/pages/_modal.scss */
+  color: #fff;
+  animation-name: playlist_img;
+  animation-duration: 1s;
+  animation-iteration-count: infinite; }
+  /* line 14, sass/pages/_modal.scss */
   .modal--header {
     display: flex;
     justify-content: space-between; }
-    /* line 14, sass/pages/_modal.scss */
+    /* line 17, sass/pages/_modal.scss */
     .modal--header p {
       font-size: 1.2rem; }
-  /* line 18, sass/pages/_modal.scss */
+  /* line 21, sass/pages/_modal.scss */
   .modal--active {
     margin: 2rem 0;
     display: flex;
     justify-content: space-between; }
-    /* line 22, sass/pages/_modal.scss */
+    /* line 25, sass/pages/_modal.scss */
     .modal--active--left {
       display: flex;
       justify-content: space-between; }
-      /* line 25, sass/pages/_modal.scss */
+      /* line 28, sass/pages/_modal.scss */
       .modal--active--left img {
         width: 5rem;
         height: 3rem;
         margin-right: 0.6rem;
         padding: 0 0.8rem;
         margin-top: 0.2rem; }
-      /* line 32, sass/pages/_modal.scss */
+      /* line 35, sass/pages/_modal.scss */
       .modal--active--left div {
         margin-top: 0.6rem; }
-        /* line 34, sass/pages/_modal.scss */
+        /* line 37, sass/pages/_modal.scss */
         .modal--active--left div p {
           color: #2da7f8; }
-    /* line 39, sass/pages/_modal.scss */
+    /* line 42, sass/pages/_modal.scss */
     .modal--active--right {
       display: flex;
       justify-content: space-between; }
-    /* line 43, sass/pages/_modal.scss */
+    /* line 46, sass/pages/_modal.scss */
     .modal--active i {
       font-size: 1.2rem;
       margin-left: 1.2rem;
       margin-top: 1.2rem;
       transition: all 0.7s; }
-      /* line 48, sass/pages/_modal.scss */
+      /* line 51, sass/pages/_modal.scss */
       .modal--active i:hover {
         background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text; }
-  /* line 56, sass/pages/_modal.scss */
+  /* line 59, sass/pages/_modal.scss */
   .modal--button {
     display: flex;
     justify-content: space-between;
     font-size: 1.4rem; }
-    /* line 60, sass/pages/_modal.scss */
+    /* line 63, sass/pages/_modal.scss */
     .modal--button span {
       color: #fff; }
-    /* line 63, sass/pages/_modal.scss */
+    /* line 66, sass/pages/_modal.scss */
     .modal--button a {
       color: #fff;
       border: 1px solid #fff;
       padding: 0.2rem 1rem;
       border-radius: 1.2rem; }
-      /* line 68, sass/pages/_modal.scss */
+      /* line 71, sass/pages/_modal.scss */
       .modal--button a:hover {
         background-image: linear-gradient(to bottom, #2da7f8, #5f61e3); }
-  /* line 73, sass/pages/_modal.scss */
+  /* line 76, sass/pages/_modal.scss */
   .modal--item {
     transition: all 0.7s; }
-    /* line 75, sass/pages/_modal.scss */
+    /* line 78, sass/pages/_modal.scss */
     .modal--item:hover {
       background-color: #f851f8; }
+
+@keyframes playlist_img {
+  0% {
+    box-shadow: rgba(4, 255, 222, 0.4) 0px 0px 0px 2px, rgba(5, 253, 241, 0.65) 0px 4px 6px -1px, rgba(6, 227, 243, 0.08) 0px 1px 0px inset; }
+  100% {
+    box-shadow: rgba(0, 255, 21, 0.4) 0px 0px 0px 2px, rgba(0, 255, 21, 0.65) 0px 4px 6px -1px, rgba(43, 255, 1, 0.08) 0px 1px 0px inset; } }
 
 /* line 1, sass/components/icons.scss */
 .icon {
@@ -1540,14 +1603,25 @@ select {
   border: 1px solid #fff;
   padding: 0.6rem 5rem;
   border-radius: 2rem;
-  transition: all 1s; }
-  /* line 47, sass/components/_buttons.scss */
+  transition: all 1s;
+  animation-name: btn_universal__animation;
+  animation-duration: 2s;
+  animation-iteration-count: 1; }
+  /* line 50, sass/components/_buttons.scss */
   .btn_universal:hover {
     background-image: linear-gradient(to right, #2da7f8, #5f61e3); }
 
-/* line 51, sass/components/_buttons.scss */
+/* line 54, sass/components/_buttons.scss */
 .artist_btn {
   display: block;
   margin: 4rem auto;
   width: 20rem;
   text-align: center; }
+
+@keyframes btn_universal__animation {
+  0% {
+    transform: translateX(-80rem); }
+  80% {
+    transform: translateX(5rem); }
+  100% {
+    transform: translateX(0); } }

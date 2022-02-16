@@ -34,7 +34,7 @@
       text-align: center;
 
       i {
-        margin-right: 2rem;
+        margin-right: 1rem;
       }
     }
     .google {
@@ -128,9 +128,23 @@
     font-size: 1.5rem;
     top: 1rem;
     right: 1rem;
+    animation-name: close;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
     &:hover {
       color: red;
       cursor: pointer;
     }
+  }
+}
+@keyframes close {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
   }
 }

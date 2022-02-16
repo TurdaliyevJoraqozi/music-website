@@ -2,13 +2,17 @@
   display: block;
   padding: 2rem;
   position: relative;
-  margin: 5rem auto;
+  // margin: 5rem auto;
   display: flex;
   justify-content: space-between;
   width: 90%;
   background-color: #383a3c;
   height: 5rem;
   transition: all 0.4s;
+  position: fixed;
+  bottom: 1rem;
+  left: 8rem;
+
   &:hover {
     box-shadow: rgb(255, 255, 255) 0px 3px 8px;
   }

@@ -44,6 +44,9 @@
   padding: 0.6rem 5rem;
   border-radius: 2rem;
   transition: all 1s;
+  animation-name: btn_universal__animation;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
   &:hover {
     background-image: linear-gradient(to right, #2da7f8, #5f61e3);
   }
@@ -55,3 +58,14 @@
   text-align: center;
 }
 // <a class="btn_universal artist_btn" href="#">SHOW MORE</a>
+@keyframes btn_universal__animation {
+  0% {
+    transform: translateX(-80rem);
+  }
+  80% {
+    transform: translateX(5rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
