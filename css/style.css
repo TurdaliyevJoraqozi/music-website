@@ -214,6 +214,30 @@ select {
 .podcast__nav .home__nav--left--list ul li {
   margin-left: 3rem; }
 
+/* line 90, sass/layout/_navigation.scss */
+.home__nav--right ul {
+  display: flex; }
+  /* line 92, sass/layout/_navigation.scss */
+  .home__nav--right ul li {
+    margin-left: 2rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 0.8rem;
+    transition: all 0.6s; }
+    /* line 97, sass/layout/_navigation.scss */
+    .home__nav--right ul li a {
+      color: #fff;
+      font-size: 1.4rem;
+      transition: all 0.6s; }
+      /* line 101, sass/layout/_navigation.scss */
+      .home__nav--right ul li a:hover {
+        background-image: linear-gradient(to right, #2da7f8, #5f61e3);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text; }
+    /* line 108, sass/layout/_navigation.scss */
+    .home__nav--right ul li:hover {
+      background-color: #fff; }
+
 /* line 1, sass/layout/_header.scss */
 .landing__header {
   width: 95vw;
@@ -1014,6 +1038,41 @@ select {
   .signUp__close:hover {
     color: red;
     cursor: pointer; }
+
+/* line 2, sass/pages/_loginIn.scss */
+.loginIn__card {
+  position: relative;
+  background-color: #fff;
+  width: 30%;
+  margin: 0 auto;
+  height: 65vh;
+  padding: 2rem 5rem;
+  border-radius: 1rem; }
+
+/* line 11, sass/pages/_loginIn.scss */
+.loginIn__btn {
+  background-color: #edf9ff;
+  display: block;
+  margin: 1.2rem auto;
+  padding: 1rem;
+  text-align: center;
+  color: #555;
+  width: 90%;
+  border: 1px solid #555;
+  border-radius: 0.6rem;
+  transition: all 0.8s; }
+  /* line 22, sass/pages/_loginIn.scss */
+  .loginIn__btn:hover {
+    background-color: #555;
+    color: #ffffff; }
+
+/* line 27, sass/pages/_loginIn.scss */
+.loginIn__check {
+  display: flex; }
+  /* line 29, sass/pages/_loginIn.scss */
+  .loginIn__check p {
+    margin-top: 0.6rem;
+    width: 100%; }
 
 /* line 1, sass/pages/_creteatePlaylist.scss */
 .search__playlist {

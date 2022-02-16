@@ -85,3 +85,29 @@
     }
   }
 }
+// .sin in
+.home__nav--right {
+  ul {
+    display: flex;
+    li {
+      margin-left: 2rem;
+      padding: 0.6rem 0.9rem;
+      border-radius: 0.8rem;
+      transition: all 0.6s;
+      a {
+        color: #fff;
+        font-size: 1.4rem;
+        transition: all 0.6s;
+        &:hover {
+          background-image: linear-gradient(to right, #2da7f8, #5f61e3);
+          color: transparent;
+          background-clip: text;
+          -webkit-background-clip: text;
+        }
+      }
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+}
