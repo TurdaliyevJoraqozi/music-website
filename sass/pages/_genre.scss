@@ -1,0 +1,16 @@
+.genre {
+  &__title {
+    color: #fff;
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+  &__images {
+    margin: 2rem 0;
+    div {
+      img {
+        width: 18rem;
+        height: 10rem;
+      }
+    }
+  }
+}

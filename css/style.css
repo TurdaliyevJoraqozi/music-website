@@ -141,6 +141,10 @@ select {
   background-repeat: no-repeat;
   background-size: cover; }
 
+/* line 81, sass/base/_reset.scss */
+.body__genre {
+  background-color: #161a1a; }
+
 /* line 2, sass/layout/_navigation.scss */
 .landing__nav {
   display: flex;
@@ -1129,6 +1133,20 @@ select {
       /* line 50, sass/pages/_popup.scss */
       .popup__btn a:hover {
         background-image: linear-gradient(to right, #2da7f8, #5f61e3); }
+
+/* line 2, sass/pages/_genre.scss */
+.genre__title {
+  color: #fff;
+  font-size: 2rem;
+  margin: 2rem 0; }
+
+/* line 7, sass/pages/_genre.scss */
+.genre__images {
+  margin: 2rem 0; }
+  /* line 10, sass/pages/_genre.scss */
+  .genre__images div img {
+    width: 18rem;
+    height: 10rem; }
 
 /* line 1, sass/pages/_creteatePlaylist.scss */
 .search__playlist {
