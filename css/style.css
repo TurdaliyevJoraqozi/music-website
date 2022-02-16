@@ -1074,6 +1074,62 @@ select {
     margin-top: 0.6rem;
     width: 100%; }
 
+/* line 1, sass/pages/_popup.scss */
+.popup {
+  background-color: #161a1a;
+  opacity: 0.9;
+  height: 100vh;
+  width: 100vw;
+  position: fixed; }
+  /* line 7, sass/pages/_popup.scss */
+  .popup__card {
+    padding: 1.6rem;
+    position: relative;
+    background-color: #333;
+    width: 30%;
+    height: 38vh;
+    margin: 20rem auto; }
+    /* line 14, sass/pages/_popup.scss */
+    .popup__card h3 {
+      color: #fff;
+      margin-bottom: 1.2rem; }
+    /* line 18, sass/pages/_popup.scss */
+    .popup__card input,
+    .popup__card textarea {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #2b2bd3;
+      padding: 0.8rem 0;
+      color: #fff; }
+    /* line 27, sass/pages/_popup.scss */
+    .popup__card textarea {
+      height: 8rem;
+      outline: none;
+      border-bottom: 1px solid rgba(201, 169, 169, 0.281); }
+  /* line 33, sass/pages/_popup.scss */
+  .popup__desc {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    color: #fff;
+    font-size: 1.3rem; }
+  /* line 40, sass/pages/_popup.scss */
+  .popup__btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem; }
+    /* line 44, sass/pages/_popup.scss */
+    .popup__btn a {
+      border: 1px solid #fff;
+      border-radius: 1.2rem;
+      padding: 0.4rem 2rem;
+      color: #fff;
+      transition: all 0.5s; }
+      /* line 50, sass/pages/_popup.scss */
+      .popup__btn a:hover {
+        background-image: linear-gradient(to right, #2da7f8, #5f61e3); }
+
 /* line 1, sass/pages/_creteatePlaylist.scss */
 .search__playlist {
   display: flex;
