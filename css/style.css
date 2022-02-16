@@ -1262,6 +1262,86 @@ select {
     border: none;
     opacity: 0.7; }
 
+/* line 1, sass/pages/_modal.scss */
+.modal {
+  position: absolute;
+  background-color: #303033;
+  right: 1rem;
+  top: 5rem;
+  width: 17vw;
+  height: 80vh;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  color: #fff; }
+  /* line 11, sass/pages/_modal.scss */
+  .modal--header {
+    display: flex;
+    justify-content: space-between; }
+    /* line 14, sass/pages/_modal.scss */
+    .modal--header p {
+      font-size: 1.2rem; }
+  /* line 18, sass/pages/_modal.scss */
+  .modal--active {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between; }
+    /* line 22, sass/pages/_modal.scss */
+    .modal--active--left {
+      display: flex;
+      justify-content: space-between; }
+      /* line 25, sass/pages/_modal.scss */
+      .modal--active--left img {
+        width: 5rem;
+        height: 3rem;
+        margin-right: 0.6rem;
+        padding: 0 0.8rem;
+        margin-top: 0.2rem; }
+      /* line 32, sass/pages/_modal.scss */
+      .modal--active--left div {
+        margin-top: 0.6rem; }
+        /* line 34, sass/pages/_modal.scss */
+        .modal--active--left div p {
+          color: #2da7f8; }
+    /* line 39, sass/pages/_modal.scss */
+    .modal--active--right {
+      display: flex;
+      justify-content: space-between; }
+    /* line 43, sass/pages/_modal.scss */
+    .modal--active i {
+      font-size: 1.2rem;
+      margin-left: 1.2rem;
+      margin-top: 1.2rem;
+      transition: all 0.7s; }
+      /* line 48, sass/pages/_modal.scss */
+      .modal--active i:hover {
+        background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text; }
+  /* line 56, sass/pages/_modal.scss */
+  .modal--button {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem; }
+    /* line 60, sass/pages/_modal.scss */
+    .modal--button span {
+      color: #fff; }
+    /* line 63, sass/pages/_modal.scss */
+    .modal--button a {
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 0.2rem 1rem;
+      border-radius: 1.2rem; }
+      /* line 68, sass/pages/_modal.scss */
+      .modal--button a:hover {
+        background-image: linear-gradient(to bottom, #2da7f8, #5f61e3); }
+  /* line 73, sass/pages/_modal.scss */
+  .modal--item {
+    transition: all 0.7s; }
+    /* line 75, sass/pages/_modal.scss */
+    .modal--item:hover {
+      background-color: #f851f8; }
+
 /* line 1, sass/components/icons.scss */
 .icon {
   text-align: center;

@@ -1,0 +1,79 @@
+.modal {
+  position: absolute;
+  background-color: #303033;
+  right: 1rem;
+  top: 5rem;
+  width: 17vw;
+  height: 80vh;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  color: #fff;
+  &--header {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  &--active {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    &--left {
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 5rem;
+        height: 3rem;
+        margin-right: 0.6rem;
+        padding: 0 0.8rem;
+        margin-top: 0.2rem;
+      }
+      div {
+        margin-top: 0.6rem;
+        p {
+          color: #2da7f8;
+        }
+      }
+    }
+    &--right {
+      display: flex;
+      justify-content: space-between;
+    }
+    i {
+      font-size: 1.2rem;
+      margin-left: 1.2rem;
+      margin-top: 1.2rem;
+      transition: all 0.7s;
+      &:hover {
+        background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+      }
+    }
+  }
+  &--button {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    span {
+      color: #fff;
+    }
+    a {
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 0.2rem 1rem;
+      border-radius: 1.2rem;
+      &:hover {
+        background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
+      }
+    }
+  }
+  &--item {
+    transition: all 0.7s;
+    &:hover {
+      background-color: rgb(248, 81, 248);
+    }
+  }
+}
