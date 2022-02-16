@@ -134,6 +134,13 @@ select {
 .body__createPlaylist {
   background-color: #161a1a; }
 
+/* line 75, sass/base/_reset.scss */
+.body__signUp {
+  background-image: url(/images/BG-22.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 /* line 2, sass/layout/_navigation.scss */
 .landing__nav {
   display: flex;
@@ -867,6 +874,146 @@ select {
   /* line 71, sass/pages/_setting.scss */
   .account__list li span {
     color: rgba(255, 255, 255, 0.623); }
+
+/* line 2, sass/pages/_signUp.scss */
+.signUp__main {
+  width: 100%;
+  height: 80vh; }
+
+/* line 6, sass/pages/_signUp.scss */
+.signUp__card {
+  position: relative;
+  background-color: #fff;
+  width: 35%;
+  margin: 0 auto;
+  height: 80vh;
+  padding: 2rem 5rem;
+  border-radius: 1rem; }
+  /* line 14, sass/pages/_signUp.scss */
+  .signUp__card h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800; }
+
+/* line 20, sass/pages/_signUp.scss */
+.signUp__aplication {
+  margin: 1.3rem 0;
+  display: flex;
+  justify-content: space-between; }
+  /* line 24, sass/pages/_signUp.scss */
+  .signUp__aplication .facebook,
+  .signUp__aplication .google {
+    background-color: #3568b8;
+    padding: 0.4rem 2rem;
+    border: none;
+    border-radius: 1.6rem;
+    width: 40%;
+    color: #fff;
+    display: flex;
+    font-size: 1.6rem;
+    text-align: center; }
+    /* line 36, sass/pages/_signUp.scss */
+    .signUp__aplication .facebook i,
+    .signUp__aplication .google i {
+      margin-right: 2rem; }
+  /* line 40, sass/pages/_signUp.scss */
+  .signUp__aplication .google {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333; }
+    /* line 44, sass/pages/_signUp.scss */
+    .signUp__aplication .google i {
+      color: #eb6d05; }
+
+/* line 51, sass/pages/_signUp.scss */
+.signUp__inputs input {
+  display: block;
+  width: 100%;
+  margin: 0.8rem 0;
+  border: 1px solid #0effeb;
+  padding: 1rem;
+  border-radius: 0.5rem; }
+  /* line 58, sass/pages/_signUp.scss */
+  .signUp__inputs input:focus + label {
+    color: #03ff03; }
+
+/* line 62, sass/pages/_signUp.scss */
+.signUp__inputs label {
+  color: red; }
+
+/* line 66, sass/pages/_signUp.scss */
+.signUp__select {
+  display: flex;
+  justify-content: space-between; }
+  /* line 69, sass/pages/_signUp.scss */
+  .signUp__select select {
+    width: 45%;
+    border: 1px solid #3333;
+    padding: 0.8rem 1rem;
+    border-radius: 0.6rem; }
+    /* line 74, sass/pages/_signUp.scss */
+    .signUp__select select:hover {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; }
+
+/* line 79, sass/pages/_signUp.scss */
+.signUp__robot {
+  display: flex;
+  border: 1px solid #333;
+  padding: 2rem 1.2rem;
+  border-radius: 0.6rem;
+  margin: 1rem 2rem;
+  font-size: 1.4rem; }
+  /* line 86, sass/pages/_signUp.scss */
+  .signUp__robot input {
+    margin-top: 0.2rem;
+    margin-right: 0.7rem; }
+  /* line 90, sass/pages/_signUp.scss */
+  .signUp__robot i {
+    margin-left: 16rem;
+    font-size: 1.4rem;
+    color: blue;
+    font-weight: bold; }
+
+/* line 97, sass/pages/_signUp.scss */
+.signUp__button {
+  text-align: center;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column; }
+  /* line 102, sass/pages/_signUp.scss */
+  .signUp__button p {
+    color: #333; }
+  /* line 105, sass/pages/_signUp.scss */
+  .signUp__button span {
+    color: #3568b8;
+    margin: 0.5rem 0; }
+  /* line 109, sass/pages/_signUp.scss */
+  .signUp__button a {
+    background-color: #009ef6;
+    display: block;
+    margin: 1.2rem auto;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    border: 1px solid #009ef6;
+    border-radius: 0.6rem;
+    transition: all 0.8s; }
+    /* line 120, sass/pages/_signUp.scss */
+    .signUp__button a:hover {
+      background-color: #fff;
+      color: #009ef6; }
+
+/* line 126, sass/pages/_signUp.scss */
+.signUp__close {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 1rem;
+  right: 1rem; }
+  /* line 131, sass/pages/_signUp.scss */
+  .signUp__close:hover {
+    color: red;
+    cursor: pointer; }
 
 /* line 1, sass/pages/_creteatePlaylist.scss */
 .search__playlist {
