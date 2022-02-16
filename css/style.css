@@ -149,6 +149,13 @@ select {
 .body__play {
   background-color: #161a1a; }
 
+/* line 87, sass/base/_reset.scss */
+.body__ovewiev {
+  background-image: url(/images/BGartist.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 /* line 2, sass/layout/_navigation.scss */
 .landing__nav {
   display: flex;
@@ -1236,6 +1243,10 @@ select {
       background-color: #fcfeff;
       margin-top: 0.7rem;
       margin-left: 0.8rem; }
+
+/* line 1, sass/pages/_overwiev.scss */
+.section__overwiev {
+  margin: 3rem 0; }
 
 /* line 1, sass/pages/_creteatePlaylist.scss */
 .search__playlist {

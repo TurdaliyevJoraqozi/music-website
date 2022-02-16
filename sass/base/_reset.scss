@@ -84,6 +84,12 @@ select {
   &__play {
     background-color: #161a1a;
   }
+  &__ovewiev {
+    background-image: url(/images/BGartist.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 // <div class="more">
 // <div>
