@@ -2,7 +2,7 @@
   position: absolute;
   background-color: #303033;
   right: 1rem;
-  top: 5rem;
+  top: 50%;
   width: 17vw;
   height: 80vh;
   padding: 1rem;
@@ -16,6 +16,12 @@
     justify-content: space-between;
     p {
       font-size: 1.2rem;
+    }
+    a {
+      i {
+        color: #fff;
+        font-size: 1.4rem;
+      }
     }
   }
   &--active {
@@ -90,5 +96,14 @@
     box-shadow: rgba(0, 255, 21, 0.4) 0px 0px 0px 2px,
       rgba(0, 255, 21, 0.65) 0px 4px 6px -1px,
       rgba(43, 255, 1, 0.08) 0px 1px 0px inset;
+  }
+}
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  &:target {
+    opacity: 1;
+    visibility: visible;
   }
 }

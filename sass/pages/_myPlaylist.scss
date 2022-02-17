@@ -22,14 +22,14 @@
 }
 
 .footer__playlist {
-  position: relative;
   &--plus {
     border-radius: 1rem;
     background-color: #393a3c;
-    position: absolute;
+    position: fixed;
     padding: 0.6rem;
-    top: -8rem;
-    left: 25rem;
+    bottom: 6rem;
+    left: 22rem;
+    z-index: 3;
     &:hover {
       box-shadow: rgba(255, 255, 255, 0.9) 0px 1px 4px;
     }

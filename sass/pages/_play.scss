@@ -62,6 +62,7 @@
   &--middle {
     &--top {
       margin-top: -1rem;
+      margin-left: 3rem;
     }
     &--bottom {
       margin-left: -10rem;
@@ -86,6 +87,9 @@
       background-color: #fcfeff;
       margin-top: 0.7rem;
       margin-left: 0.8rem;
+    }
+    i {
+      margin-right: 1rem;
     }
   }
 }

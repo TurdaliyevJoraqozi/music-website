@@ -20,7 +20,7 @@
     <title>Landing page</title>
   </head>
   <body>
-    <header class="landing__header">
+    <header class="landing__header" id="hero">
       <nav class="container">
         <div class="landing__nav">
           <div class="logo">
@@ -31,10 +31,10 @@
               <li><a href="#">Download</a></li>
               <li><a href="#">Help</a></li>
               <li>
-                <a href="#"><span>Login</span></a>
+                <a href="#login__popup--id"><span>Login</span></a>
               </li>
               <li>
-                <a href="#"><span>Sign Up</span></a>
+                <a href="#signUp__card--id"><span>Sign Up</span></a>
               </li>
             </ul>
           </div>
@@ -210,37 +210,119 @@
         </div>
       </div>
     </footer>
-    <div class="play">
-      <div class="play--left">
-        <img src="/images/Album Cover-12.avif" alt="" />
-        <div class="play--left--name">
-          <p>Rebel Robel</p>
-          <span>David Bowel</span>
+
+    <div class="login__popup" id="login__popup--id">
+      <section class="loginIn__card">
+        <div class="signUp__close"><a href="#hero"><i class="fa-solid fa-xmark"></i></a></div>
+        <h2>What will you listen to today?</h2>
+        <div class="signUp__aplication">
+          <div class="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+            <p>Facebook</p>
+          </div>
+          <div class="google">
+            <i class="fa-brands fa-google"></i>
+            <p>Google</p>
+          </div>
         </div>
-        <div class="play--left--icon">
-          <i class="fa-solid fa-heart"></i>
-          <i class="fa-solid fa-check"></i>
+        <div class="signUp__inputs">
+          <input
+            class="signUp__input"
+            required
+            type="email"
+            placeholder="RandomExample@gamil.com"
+            id="signUp__email"
+          />
+          <label class="signUp__label" for="signUp__email">Email asdress</label>
+          <input
+            class="signUp__input"
+            required
+            type="email"
+            placeholder="........"
+            id="signUp__password"
+          />
+          <label class="signUp__label" for="signUp__password">Password</label>
+       
+        <div class="signUp__select">
+          <div>
+          <div class="loginIn__check">
+              <input type="checkbox" />
+            <p>Remember me</p>
+          </div>
+          </div>
+          <a class="signUp__btn" href="#">LOGIN IN</a>
         </div>
-      </div>
-      <div class="play--middle">
-        <div class="play--middle--top">
-          <i class="fa-solid fa-arrow-right-arrow-left"></i>
-          <i class="fa-solid fa-backward"></i>
-          <i class="fa-solid fa-circle-pause"></i>
-          <i class="fa-solid fa-forward-fast"></i>
-          <i class="fa-solid fa-line-height"></i>
+
+        <div class="signUp__button">
+          <span>Forgot your password?</span>
+          <p>Don`t have an account?</p>
+          <a class="loginIn__btn" href="/home.html">SIGN UP FOR MUSICBOX</a>
+
         </div>
-        <div class="play--middle--bottom">
-          <span>2:05</span>
-          <div class="play--middle--bottom--value"></div>
-          <span>4:05</span>
-        </div>
-      </div>
-      <div class="play--right">
-        <i class="fa-solid fa-folder-music"></i>
-        <i class="fa-solid fa-volume-high"></i>
-        <div class="play--right--value"></div>
-      </div>
+      </section>
     </div>
+   <div class="sign__popup" id="signUp__card--id">
+    <section class="signUp__card" >
+      <div class="signUp__close"><a href="#hero"><i class="fa-solid fa-xmark"></i></a></div>
+      <h2>Read to sign up?</h2>
+      <div class="signUp__aplication">
+        <div class="facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+          <p>Facebook</p>
+        </div>
+        <div class="google">
+          <i class="fa-brands fa-google"></i>
+          <p>Google</p>
+        </div>
+      </div>
+      <div class="signUp__inputs">
+        <input
+          class="signUp__input"
+          required
+          type="email"
+          placeholder="RandomExample@gamil.com"
+          id="signUp__email"
+        />
+        <label class="signUp__label" for="signUp__email">Email asdress</label>
+        <input
+          class="signUp__input"
+          required
+          type="email"
+          placeholder="........"
+          id="signUp__password"
+        />
+        <label class="signUp__label" for="signUp__password">Password</label>
+        <input
+          class="signUp__input"
+          required
+          type="email"
+          placeholder="Username"
+        />
+      </div>
+      <div class="signUp__select">
+        <select id="">
+          <option value="">Date of Birth</option>
+          <option value="">1999</option>
+          <option value="">2002</option>
+        </select>
+        <select id="">
+          <option value="">Gender</option>
+          <option value="">Mail</option>
+          <option value="">Woman</option>
+        </select>
+      </div>
+      <div class="signUp__robot">
+        <input type="checkbox" />
+        <p>I`m not a robot</p>
+        <i class="fa-solid fa-rotate-left"></i>
+      </div>
+      <div class="signUp__button">
+        <p>By clicking by on "Sign up" you accept the</p>
+        <span>Terms and Condition of Use.</span>
+        <a class="signUp__btn" href="/home.html">SIGN UP</a>
+        <p>Already have an account? <span>Login In</span></p>
+      </div>
+    </section>
+   </div>
   </body>
 </html>

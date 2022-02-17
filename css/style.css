@@ -47,50 +47,49 @@
 
 /* line 1, sass/base/_reset.scss */
 body {
-  font-family: "Montserrat", sans-serif;
-  font-family: "Roboto Mono", monospace; }
+  font-family: "Montserrat", sans-serif; }
 
-/* line 5, sass/base/_reset.scss */
+/* line 4, sass/base/_reset.scss */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
-/* line 10, sass/base/_reset.scss */
+/* line 9, sass/base/_reset.scss */
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
 
-/* line 14, sass/base/_reset.scss */
+/* line 13, sass/base/_reset.scss */
 a {
   text-decoration: none; }
 
-/* line 17, sass/base/_reset.scss */
+/* line 16, sass/base/_reset.scss */
 li {
   list-style: none; }
 
-/* line 20, sass/base/_reset.scss */
+/* line 19, sass/base/_reset.scss */
 .container {
   width: 80%;
   margin: 0 auto; }
 
-/* line 25, sass/base/_reset.scss */
+/* line 24, sass/base/_reset.scss */
 input,
 select {
   outline: none; }
 
-/* line 29, sass/base/_reset.scss */
+/* line 28, sass/base/_reset.scss */
 .active {
   border: 1px solid #173da7;
   padding: 0 0.8rem;
   border-radius: 1rem; }
 
-/* line 35, sass/base/_reset.scss */
+/* line 34, sass/base/_reset.scss */
 .body__home__page, .body__podcast__page {
   background-color: #161a1a;
   font-family: "Montserrat", sans-serif; }
 
-/* line 40, sass/base/_reset.scss */
+/* line 39, sass/base/_reset.scss */
 .body__playlist {
   background-image: url(/images/BG-2.avif);
   background-position: center;
@@ -98,7 +97,7 @@ select {
   background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif; }
 
-/* line 47, sass/base/_reset.scss */
+/* line 46, sass/base/_reset.scss */
 .body__albom {
   background-image: url(/images/BG.png);
   background-repeat: no-repeat;
@@ -106,12 +105,12 @@ select {
   background-position: center;
   font-family: "Montserrat", sans-serif; }
 
-/* line 54, sass/base/_reset.scss */
+/* line 53, sass/base/_reset.scss */
 .body__releases {
   background-color: #161a1a;
   font-family: "Montserrat", sans-serif; }
 
-/* line 58, sass/base/_reset.scss */
+/* line 57, sass/base/_reset.scss */
 .body__artist {
   background-image: url(/images/orqa.png);
   background-position: center;
@@ -119,32 +118,32 @@ select {
   background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif; }
 
-/* line 65, sass/base/_reset.scss */
+/* line 64, sass/base/_reset.scss */
 .body__myPlaylist {
   background-color: #161a1a;
   font-family: "Montserrat", sans-serif; }
 
-/* line 69, sass/base/_reset.scss */
+/* line 68, sass/base/_reset.scss */
 .body__history {
   background-color: #161a1a;
   font-family: "Montserrat", sans-serif; }
 
-/* line 73, sass/base/_reset.scss */
+/* line 72, sass/base/_reset.scss */
 .body__Mypodcast {
   background-color: #161a1a;
   font-family: "Montserrat", sans-serif; }
 
-/* line 77, sass/base/_reset.scss */
+/* line 76, sass/base/_reset.scss */
 .body__setting {
   background-color: #161a1a;
   font-family: "Montserrat", sans-serif; }
 
-/* line 81, sass/base/_reset.scss */
+/* line 80, sass/base/_reset.scss */
 .body__createPlaylist {
   background-color: #161a1a;
   font-family: "Montserrat", sans-serif; }
 
-/* line 85, sass/base/_reset.scss */
+/* line 84, sass/base/_reset.scss */
 .body__signUp {
   background-image: url(/images/BG-22.avif);
   background-position: center;
@@ -152,17 +151,17 @@ select {
   background-size: cover;
   font-family: "Montserrat", sans-serif; }
 
-/* line 92, sass/base/_reset.scss */
+/* line 91, sass/base/_reset.scss */
 .body__genre {
   background-color: #161a1a;
   font-family: "Montserrat", sans-serif; }
 
-/* line 96, sass/base/_reset.scss */
+/* line 95, sass/base/_reset.scss */
 .body__play {
   background-color: #161a1a;
   font-family: "Montserrat", sans-serif; }
 
-/* line 100, sass/base/_reset.scss */
+/* line 99, sass/base/_reset.scss */
 .body__ovewiev {
   background-image: url(/images/BGartist.png);
   background-position: center;
@@ -266,6 +265,11 @@ select {
     /* line 108, sass/layout/_navigation.scss */
     .home__nav--right ul li:hover {
       background-color: #fff; }
+
+/* line 116, sass/layout/_navigation.scss */
+nav a i {
+  color: #fff;
+  font-size: 1.5rem; }
 
 /* line 1, sass/layout/_header.scss */
 .landing__header {
@@ -786,6 +790,15 @@ select {
     .songs div i:hover {
       color: crimson; }
 
+/* line 85, sass/pages/_playlist.scss */
+.colum1 img {
+  width: 5rem;
+  height: 5rem; }
+
+/* line 90, sass/pages/_playlist.scss */
+.header__playlist--left {
+  border-radius: 1.5rem; }
+
 /* line 1, sass/pages/_home.scss */
 .flow__img {
   transform: scale(0.6);
@@ -836,7 +849,7 @@ select {
   transition: all 1s; }
   /* line 46, sass/pages/_home.scss */
   .music__categories div:hover {
-    transform: rotateX(360deg); }
+    transform: translateY(-1rem); }
 
 /* line 51, sass/pages/_home.scss */
 .categories-row__1 {
@@ -910,32 +923,30 @@ select {
     .card__active:hover i {
       background-color: aqua; }
 
-/* line 24, sass/pages/_myPlaylist.scss */
-.footer__playlist {
-  position: relative; }
-  /* line 26, sass/pages/_myPlaylist.scss */
-  .footer__playlist--plus {
-    border-radius: 1rem;
-    background-color: #393a3c;
-    position: absolute;
-    padding: 0.6rem;
-    top: -8rem;
-    left: 25rem; }
-    /* line 33, sass/pages/_myPlaylist.scss */
-    .footer__playlist--plus:hover {
-      box-shadow: rgba(255, 255, 255, 0.9) 0px 1px 4px; }
-    /* line 37, sass/pages/_myPlaylist.scss */
-    .footer__playlist--plus ul li {
-      display: flex;
-      color: aliceblue; }
-      /* line 40, sass/pages/_myPlaylist.scss */
-      .footer__playlist--plus ul li p {
-        margin-top: 1rem; }
-      /* line 43, sass/pages/_myPlaylist.scss */
-      .footer__playlist--plus ul li img {
-        width: 3rem;
-        height: 3rem;
-        margin: 0.4rem; }
+/* line 25, sass/pages/_myPlaylist.scss */
+.footer__playlist--plus {
+  border-radius: 1rem;
+  background-color: #393a3c;
+  position: fixed;
+  padding: 0.6rem;
+  bottom: 6rem;
+  left: 22rem;
+  z-index: 3; }
+  /* line 33, sass/pages/_myPlaylist.scss */
+  .footer__playlist--plus:hover {
+    box-shadow: rgba(255, 255, 255, 0.9) 0px 1px 4px; }
+  /* line 37, sass/pages/_myPlaylist.scss */
+  .footer__playlist--plus ul li {
+    display: flex;
+    color: aliceblue; }
+    /* line 40, sass/pages/_myPlaylist.scss */
+    .footer__playlist--plus ul li p {
+      margin-top: 1rem; }
+    /* line 43, sass/pages/_myPlaylist.scss */
+    .footer__playlist--plus ul li img {
+      width: 3rem;
+      height: 3rem;
+      margin: 0.4rem; }
 
 /* line 2, sass/pages/_setting.scss */
 .my__account--img {
@@ -1177,7 +1188,7 @@ select {
   position: relative;
   background-color: #fff;
   width: 30%;
-  margin: 0 auto;
+  margin: 10rem auto;
   height: 65vh;
   padding: 2rem 5rem;
   border-radius: 1rem; }
@@ -1207,14 +1218,54 @@ select {
     margin-top: 0.6rem;
     width: 100%; }
 
+/* line 35, sass/pages/_loginIn.scss */
+.login__popup,
+.sign__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(85, 85, 85, 0.763);
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden; }
+
+/* line 46, sass/pages/_loginIn.scss */
+.login__popup:target {
+  opacity: 1;
+  visibility: visible; }
+
+/* line 51, sass/pages/_loginIn.scss */
+.landing__header:target .login__popup {
+  opacity: 0;
+  visibility: hidden; }
+
+/* line 56, sass/pages/_loginIn.scss */
+.sign__popup:target {
+  opacity: 1;
+  visibility: visible; }
+
+/* line 60, sass/pages/_loginIn.scss */
+.signUp__card {
+  margin-top: 6rem; }
+
 /* line 1, sass/pages/_popup.scss */
 .popup {
-  background-color: #161a1a;
-  opacity: 0.9;
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
-  position: fixed; }
-  /* line 7, sass/pages/_popup.scss */
+  height: 100vh;
+  background-color: #161a1a9d;
+  opacity: 0;
+  visibility: hidden;
+  height: 100vh;
+  width: 100vw; }
+  /* line 12, sass/pages/_popup.scss */
+  .popup:target {
+    opacity: 0.9;
+    visibility: visible; }
+  /* line 16, sass/pages/_popup.scss */
   .popup__card {
     padding: 1.6rem;
     position: relative;
@@ -1222,11 +1273,11 @@ select {
     width: 30%;
     height: 38vh;
     margin: 20rem auto; }
-    /* line 14, sass/pages/_popup.scss */
+    /* line 23, sass/pages/_popup.scss */
     .popup__card h3 {
       color: #fff;
       margin-bottom: 1.2rem; }
-    /* line 18, sass/pages/_popup.scss */
+    /* line 27, sass/pages/_popup.scss */
     .popup__card input,
     .popup__card textarea {
       width: 100%;
@@ -1235,31 +1286,31 @@ select {
       border-bottom: 1px solid #2b2bd3;
       padding: 0.8rem 0;
       color: #fff; }
-    /* line 27, sass/pages/_popup.scss */
+    /* line 36, sass/pages/_popup.scss */
     .popup__card textarea {
       height: 8rem;
       outline: none;
       border-bottom: 1px solid rgba(201, 169, 169, 0.281); }
-  /* line 33, sass/pages/_popup.scss */
+  /* line 42, sass/pages/_popup.scss */
   .popup__desc {
     display: flex;
     justify-content: space-between;
     margin: 1rem 0;
     color: #fff;
     font-size: 1.3rem; }
-  /* line 40, sass/pages/_popup.scss */
+  /* line 49, sass/pages/_popup.scss */
   .popup__btn {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem; }
-    /* line 44, sass/pages/_popup.scss */
+    /* line 53, sass/pages/_popup.scss */
     .popup__btn a {
       border: 1px solid #fff;
       border-radius: 1.2rem;
       padding: 0.4rem 2rem;
       color: #fff;
       transition: all 0.5s; }
-      /* line 50, sass/pages/_popup.scss */
+      /* line 59, sass/pages/_popup.scss */
       .popup__btn a:hover {
         background-image: linear-gradient(to right, #2da7f8, #5f61e3); }
 
@@ -1338,31 +1389,35 @@ select {
         font-size: 1.2rem; }
   /* line 63, sass/pages/_play.scss */
   .play--middle--top {
-    margin-top: -1rem; }
-  /* line 66, sass/pages/_play.scss */
+    margin-top: -1rem;
+    margin-left: 3rem; }
+  /* line 67, sass/pages/_play.scss */
   .play--middle--bottom {
     margin-left: -10rem;
     margin-top: 1rem;
     display: flex; }
-    /* line 70, sass/pages/_play.scss */
+    /* line 71, sass/pages/_play.scss */
     .play--middle--bottom--value {
       width: 30rem;
       height: 2px;
       background-color: #2da7f8; }
-    /* line 75, sass/pages/_play.scss */
+    /* line 76, sass/pages/_play.scss */
     .play--middle--bottom span {
       margin-top: -0.6rem;
       color: #fff; }
-  /* line 81, sass/pages/_play.scss */
+  /* line 82, sass/pages/_play.scss */
   .play--right {
     display: flex; }
-    /* line 83, sass/pages/_play.scss */
+    /* line 84, sass/pages/_play.scss */
     .play--right--value {
       width: 5rem;
       height: 2px;
       background-color: #fcfeff;
       margin-top: 0.7rem;
       margin-left: 0.8rem; }
+    /* line 91, sass/pages/_play.scss */
+    .play--right i {
+      margin-right: 1rem; }
 
 /* line 1, sass/pages/_overwiev.scss */
 .section__overwiev {
@@ -1411,7 +1466,7 @@ select {
   position: absolute;
   background-color: #303033;
   right: 1rem;
-  top: 5rem;
+  top: 50%;
   width: 17vw;
   height: 80vh;
   padding: 1rem;
@@ -1427,65 +1482,69 @@ select {
     /* line 17, sass/pages/_modal.scss */
     .modal--header p {
       font-size: 1.2rem; }
-  /* line 21, sass/pages/_modal.scss */
+    /* line 21, sass/pages/_modal.scss */
+    .modal--header a i {
+      color: #fff;
+      font-size: 1.4rem; }
+  /* line 27, sass/pages/_modal.scss */
   .modal--active {
     margin: 2rem 0;
     display: flex;
     justify-content: space-between; }
-    /* line 25, sass/pages/_modal.scss */
+    /* line 31, sass/pages/_modal.scss */
     .modal--active--left {
       display: flex;
       justify-content: space-between; }
-      /* line 28, sass/pages/_modal.scss */
+      /* line 34, sass/pages/_modal.scss */
       .modal--active--left img {
         width: 5rem;
         height: 3rem;
         margin-right: 0.6rem;
         padding: 0 0.8rem;
         margin-top: 0.2rem; }
-      /* line 35, sass/pages/_modal.scss */
+      /* line 41, sass/pages/_modal.scss */
       .modal--active--left div {
         margin-top: 0.6rem; }
-        /* line 37, sass/pages/_modal.scss */
+        /* line 43, sass/pages/_modal.scss */
         .modal--active--left div p {
           color: #2da7f8; }
-    /* line 42, sass/pages/_modal.scss */
+    /* line 48, sass/pages/_modal.scss */
     .modal--active--right {
       display: flex;
       justify-content: space-between; }
-    /* line 46, sass/pages/_modal.scss */
+    /* line 52, sass/pages/_modal.scss */
     .modal--active i {
       font-size: 1.2rem;
       margin-left: 1.2rem;
       margin-top: 1.2rem;
       transition: all 0.7s; }
-      /* line 51, sass/pages/_modal.scss */
+      /* line 57, sass/pages/_modal.scss */
       .modal--active i:hover {
         background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text; }
-  /* line 59, sass/pages/_modal.scss */
+  /* line 65, sass/pages/_modal.scss */
   .modal--button {
     display: flex;
     justify-content: space-between;
     font-size: 1.4rem; }
-    /* line 63, sass/pages/_modal.scss */
+    /* line 69, sass/pages/_modal.scss */
     .modal--button span {
       color: #fff; }
-    /* line 66, sass/pages/_modal.scss */
+    /* line 72, sass/pages/_modal.scss */
     .modal--button a {
       color: #fff;
       border: 1px solid #fff;
       padding: 0.2rem 1rem;
       border-radius: 1.2rem; }
-      /* line 71, sass/pages/_modal.scss */
+      /* line 77, sass/pages/_modal.scss */
       .modal--button a:hover {
         background-image: linear-gradient(to bottom, #2da7f8, #5f61e3); }
-  /* line 76, sass/pages/_modal.scss */
+  /* line 82, sass/pages/_modal.scss */
   .modal--item {
     transition: all 0.7s; }
-    /* line 78, sass/pages/_modal.scss */
+    /* line 84, sass/pages/_modal.scss */
     .modal--item:hover {
       background-color: #f851f8; }
 
@@ -1494,6 +1553,16 @@ select {
     box-shadow: rgba(4, 255, 222, 0.4) 0px 0px 0px 2px, rgba(5, 253, 241, 0.65) 0px 4px 6px -1px, rgba(6, 227, 243, 0.08) 0px 1px 0px inset; }
   100% {
     box-shadow: rgba(0, 255, 21, 0.4) 0px 0px 0px 2px, rgba(0, 255, 21, 0.65) 0px 4px 6px -1px, rgba(43, 255, 1, 0.08) 0px 1px 0px inset; } }
+
+/* line 101, sass/pages/_modal.scss */
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s; }
+  /* line 105, sass/pages/_modal.scss */
+  .modal:target {
+    opacity: 1;
+    visibility: visible; }
 
 /* line 1, sass/components/icons.scss */
 .icon {
@@ -1617,6 +1686,9 @@ select {
   margin: 4rem auto;
   width: 20rem;
   text-align: center; }
+  /* line 59, sass/components/_buttons.scss */
+  .artist_btn--2 {
+    margin-bottom: 8rem; }
 
 @keyframes btn_universal__animation {
   0% {

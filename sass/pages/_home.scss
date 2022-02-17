@@ -44,7 +44,7 @@
   div {
     transition: all 1s;
     &:hover {
-      transform: rotateX(360deg);
+      transform: translateY(-1rem);
     }
   }
 }

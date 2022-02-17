@@ -1,9 +1,18 @@
 .popup {
-  background-color: #161a1a;
-  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #161a1a9d;
+  opacity: 0;
+  visibility: hidden;
   height: 100vh;
   width: 100vw;
-  position: fixed;
+  &:target {
+    opacity: 0.9;
+    visibility: visible;
+  }
   &__card {
     padding: 1.6rem;
     position: relative;

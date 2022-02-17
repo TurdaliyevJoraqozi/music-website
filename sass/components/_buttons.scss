@@ -56,6 +56,9 @@
   margin: 4rem auto;
   width: 20rem;
   text-align: center;
+  &--2 {
+    margin-bottom: 8rem;
+  }
 }
 // <a class="btn_universal artist_btn" href="#">SHOW MORE</a>
 @keyframes btn_universal__animation {

@@ -28,9 +28,9 @@
             </div>
             <div class="home__nav--left--list">
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Browse</a></li>
-                <li><a href="#" class="active">Library</a></li>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/genre.html">Browse</a></li>
+                <li><a href="/myPlaylist.html" class="active">Library</a></li>
               </ul>
             </div>
             <div class="home__nav--left--list middle middle--setting">
@@ -183,9 +183,9 @@
           <li><span>Privacy Polisy</span></li>
           <li><span>Support</span></li>
         </ul>
-        <a class="btn_universal artist_btn" href="#">LOG OUT</a>
+        <a class="btn_universal artist_btn artist_btn--2" href="#">LOG OUT</a>
       </section>
-      <div class="play">
+      <div class="play" id="play--id">
         <div class="play--left">
           <img src="/images/Album Cover-12.avif" alt="" />
           <div class="play--left--name">
@@ -212,9 +212,139 @@
           </div>
         </div>
         <div class="play--right">
-          <i class="fa-solid fa-folder-music"></i>
+          <a href="#modal--id"> <i class="fa-solid fa-list"></i></a>
           <i class="fa-solid fa-volume-high"></i>
           <div class="play--right--value"></div>
+        </div>
+      </div>
+      <div class="modal" id="modal--id">
+        <div class="modal--header">
+          <p>Queue:70s Rick Anthems</p>
+          <a href="#play--id"> <i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <div class="modal--active">
+          <div class="modal--active--left">
+            <img src="/images/activ-music.PNG" alt="" />
+            <div>
+              <p>Relbel Rebel</p>
+              <span>David Bowie/4:29</span>
+            </div>
+          </div>
+          <div class="modal--active--right">
+            <i class="fa-solid fa-ellipsis"></i
+            ><i class="fa-solid fa-heart"></i>
+          </div>
+        </div>
+        <div class="modal--button">
+          <span>Next Up</span>
+          <a href="#">SHUFFLE</a>
+        </div>
+        <div class="modal--list">
+          <div class="modal--item">
+            <div class="modal--active">
+              <div class="modal--active--left">
+                <img src="/images/Album cover-2.avif" alt="" />
+                <div>
+                  <p>Relbel Rebel</p>
+                  <span>David Bowie/4:29</span>
+                </div>
+              </div>
+              <div>
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+          </div>
+          <div class="modal--item">
+            <div class="modal--active">
+              <div class="modal--active--left">
+                <img src="/images/Album Cover-19.avif" alt="" />
+                <div>
+                  <p>Relbel Rebel</p>
+                  <span>David Bowie/4:29</span>
+                </div>
+              </div>
+              <div>
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+          </div>
+          <div class="modal--item">
+            <div class="modal--active">
+              <div class="modal--active--left">
+                <img src="/images/Album Cover-15 (1).avif" alt="" />
+                <div>
+                  <p>Relbel Rebel</p>
+                  <span>David Bowie/4:29</span>
+                </div>
+              </div>
+              <div>
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+          </div>
+          <div class="modal--item">
+            <div class="modal--active">
+              <div class="modal--active--left">
+                <img src="/images/Album Cover-13 (1).avif" alt="" />
+                <div>
+                  <p>Relbel Rebel</p>
+                  <span>David Bowie/4:29</span>
+                </div>
+              </div>
+              <div>
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+          </div>
+          <div class="modal--item">
+            <div class="modal--active">
+              <div class="modal--active--left">
+                <img src="/images/Album Cover-12.avif" alt="" />
+                <div>
+                  <p>Relbel Rebel</p>
+                  <span>David Bowie/4:29</span>
+                </div>
+              </div>
+              <div>
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+          </div>
+          <div class="modal--item">
+            <div class="modal--active">
+              <div class="modal--active--left">
+                <img src="/images/Album Cover-11.avif" alt="" />
+                <div>
+                  <p>Relbel Rebel</p>
+                  <span>David Bowie/4:29</span>
+                </div>
+              </div>
+              <div>
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+          </div>
+          <div class="modal--item">
+            <div class="modal--active">
+              <div class="modal--active--left">
+                <img src="/images/Album cover-1.avif" alt="" />
+                <div>
+                  <p>Relbel Rebel</p>
+                  <span>David Bowie/4:29</span>
+                </div>
+              </div>
+              <div>
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

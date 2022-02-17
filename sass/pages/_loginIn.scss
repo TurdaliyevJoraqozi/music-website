@@ -3,7 +3,7 @@
     position: relative;
     background-color: #fff;
     width: 30%;
-    margin: 0 auto;
+    margin: 10rem auto;
     height: 65vh;
     padding: 2rem 5rem;
     border-radius: 1rem;
@@ -31,4 +31,32 @@
       width: 100%;
     }
   }
+}
+.login__popup,
+.sign__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(85, 85, 85, 0.763);
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+}
+.login__popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.landing__header:target {
+  .login__popup {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.sign__popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.signUp__card {
+  margin-top: 6rem;
 }
