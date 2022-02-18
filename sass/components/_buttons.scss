@@ -7,6 +7,20 @@
   padding: 1.2rem 1.4rem;
   border-radius: 2rem;
   transition: 0.5s;
+  @include respons(tab-land) {
+    bottom: -5rem;
+    padding: 0.8rem 1.4rem;
+  }
+  @include respons(tab-port) {
+    bottom: -3.5rem;
+    padding: 0.2rem 1rem;
+  }
+  @include respons(phone) {
+    padding: 0.6rem 1rem;
+    bottom: -7.5rem;
+    left: 1rem;
+    border-radius: 0.8rem;
+  }
   &:hover {
     background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
   }
@@ -14,12 +28,15 @@
 .header-btn {
   color: $color-white;
   font-size: 1.4rem;
-
   border: 1px solid $color-white;
   padding: 0.6rem 1.4rem;
   border-radius: 2rem;
   transition: 0.5s;
-
+  @include respons(phone) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
   &:hover {
     background-image: linear-gradient(to right, #2da7f8, #5f61e3);
   }
@@ -70,5 +87,69 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+// burger
+.navigation__icon {
+  transition: all 0.7s;
+  position: absolute;
+  top: 2.2rem;
+  right: 1rem;
+  width: 3rem;
+  height: 4px;
+  background-color: rgb(13, 195, 219);
+  &::after {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(13, 195, 219);
+    content: "";
+    position: absolute;
+    top: 1rem;
+  }
+  &::before {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(13, 195, 219);
+    content: "";
+    position: absolute;
+    top: -1rem;
+  }
+}
+.navigation__checkbox {
+  &--label {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    position: fixed;
+    display: none;
+    z-index: 200;
+    @include respons(phone) {
+      display: block;
+    }
+  }
+  &--input {
+    display: none;
+    &:checked ~ .container {
+      .landing__nav {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    &:checked ~ .navigation__checkbox--label {
+      .navigation__icon::after {
+        transform: rotate(65deg);
+        top: 0;
+      }
+      .navigation__icon {
+        transform: rotate(58deg);
+      }
+      .navigation__icon::before {
+        display: none;
+      }
+    }
   }
 }

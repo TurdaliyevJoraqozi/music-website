@@ -172,59 +172,96 @@ select {
 /* line 2, sass/layout/_navigation.scss */
 .landing__nav {
   display: flex;
-  justify-content: space-between; }
-  /* line 7, sass/layout/_navigation.scss */
-  .landing__nav .landing__nav-menus ul {
-    display: flex; }
-    /* line 9, sass/layout/_navigation.scss */
-    .landing__nav .landing__nav-menus ul li {
-      margin-left: 2.3rem; }
-      /* line 11, sass/layout/_navigation.scss */
-      .landing__nav .landing__nav-menus ul li a {
-        font-size: 1.8rem;
-        color: #fff; }
+  width: 95%;
+  justify-content: space-between;
+  transition: all 1s;
+  background-color: transparent;
+  width: 45vw;
+  top: 0;
+  left: 0; }
+  /* line 11, sass/layout/_navigation.scss */
+  .landing__nav .landing__nav-menus {
+    width: 100%;
+    transition: all 1s; }
+    /* line 14, sass/layout/_navigation.scss */
+    .landing__nav .landing__nav-menus ul {
+      display: flex;
+      text-align: center; }
+      /* line 17, sass/layout/_navigation.scss */
+      .landing__nav .landing__nav-menus ul li {
+        margin-left: 2.3rem; }
+        /* line 19, sass/layout/_navigation.scss */
+        .landing__nav .landing__nav-menus ul li a {
+          font-size: 1.8rem;
+          color: #fff; }
+          /* line 22, sass/layout/_navigation.scss */
+          .landing__nav .landing__nav-menus ul li a span {
+            background-color: #333;
+            transition: all 0.4s ease-in-out;
+            color: rgba(255, 247, 254, 0.712);
+            padding: 0.3rem 1rem;
+            border-radius: 0.8rem;
+            border: 1px solid #fff; }
+            /* line 29, sass/layout/_navigation.scss */
+            .landing__nav .landing__nav-menus ul li a span:hover {
+              background-color: transparent;
+              color: #fff; }
+        @media (max-width: 39.375em) {
+          /* line 17, sass/layout/_navigation.scss */
+          .landing__nav .landing__nav-menus ul li {
+            margin-left: -1rem;
+            margin-bottom: 2rem;
+            width: 100%; } }
+      @media (max-width: 39.375em) {
         /* line 14, sass/layout/_navigation.scss */
-        .landing__nav .landing__nav-menus ul li a span {
-          background-color: #333;
-          transition: all 0.4s ease-in-out;
-          color: rgba(255, 247, 254, 0.959);
-          padding: 0.3rem 1rem;
-          border-radius: 0.8rem;
-          border: 1px solid #fff; }
-          /* line 21, sass/layout/_navigation.scss */
-          .landing__nav .landing__nav-menus ul li a span:hover {
-            background-color: transparent;
-            color: #fff; }
+        .landing__nav .landing__nav-menus ul {
+          display: flex;
+          flex-direction: column; } }
+  @media (max-width: 39.375em) {
+    /* line 2, sass/layout/_navigation.scss */
+    .landing__nav {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      width: 45w;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(51, 51, 51, 0.63);
+      opacity: 0.9;
+      opacity: 0;
+      transform: scale(0.4);
+      z-index: 100; } }
 
-/* line 32, sass/layout/_navigation.scss */
+/* line 64, sass/layout/_navigation.scss */
 .home__nav {
   padding-top: 3rem;
   color: #fff;
   margin: 0 3rem;
   display: flex;
   justify-content: space-between; }
-  /* line 38, sass/layout/_navigation.scss */
+  /* line 70, sass/layout/_navigation.scss */
   .home__nav .home__nav--left {
     display: flex; }
-    /* line 41, sass/layout/_navigation.scss */
+    /* line 73, sass/layout/_navigation.scss */
     .home__nav .home__nav--left--list ul {
       margin-top: 1rem;
       display: flex; }
-      /* line 44, sass/layout/_navigation.scss */
+      /* line 76, sass/layout/_navigation.scss */
       .home__nav .home__nav--left--list ul li {
         margin-left: 4rem; }
-        /* line 47, sass/layout/_navigation.scss */
+        /* line 79, sass/layout/_navigation.scss */
         .home__nav .home__nav--left--list ul li a {
           color: #fff;
           font-size: 1.3rem;
           font-weight: 600; }
-          /* line 51, sass/layout/_navigation.scss */
+          /* line 83, sass/layout/_navigation.scss */
           .home__nav .home__nav--left--list ul li a:hover {
             background-image: linear-gradient(to right, #2da7f8, #5f61e3);
             color: transparent;
             background-clip: text;
             -webkit-background-clip: text; }
-  /* line 63, sass/layout/_navigation.scss */
+  /* line 95, sass/layout/_navigation.scss */
   .home__nav--right input {
     background-color: #333;
     padding: 0.6rem 1rem;
@@ -232,49 +269,56 @@ select {
     border: none;
     margin-right: 1rem;
     color: #fff; }
-  /* line 71, sass/layout/_navigation.scss */
+  /* line 103, sass/layout/_navigation.scss */
   .home__nav--right select {
     border: none;
     color: #fff;
     background-color: transparent; }
 
-/* line 82, sass/layout/_navigation.scss */
+/* line 114, sass/layout/_navigation.scss */
 .podcast__nav .home__nav--left--list ul li {
   margin-left: 3rem; }
 
-/* line 90, sass/layout/_navigation.scss */
+/* line 122, sass/layout/_navigation.scss */
 .home__nav--right ul {
   display: flex; }
-  /* line 92, sass/layout/_navigation.scss */
+  /* line 124, sass/layout/_navigation.scss */
   .home__nav--right ul li {
     margin-left: 2rem;
     padding: 0.6rem 0.9rem;
     border-radius: 0.8rem;
     transition: all 0.6s; }
-    /* line 97, sass/layout/_navigation.scss */
+    /* line 129, sass/layout/_navigation.scss */
     .home__nav--right ul li a {
       color: #fff;
       font-size: 1.4rem;
       transition: all 0.6s; }
-      /* line 101, sass/layout/_navigation.scss */
+      /* line 133, sass/layout/_navigation.scss */
       .home__nav--right ul li a:hover {
         background-image: linear-gradient(to right, #2da7f8, #5f61e3);
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text; }
-    /* line 108, sass/layout/_navigation.scss */
+    /* line 140, sass/layout/_navigation.scss */
     .home__nav--right ul li:hover {
       background-color: #fff; }
 
-/* line 116, sass/layout/_navigation.scss */
+/* line 148, sass/layout/_navigation.scss */
 nav a i {
   color: #fff;
   font-size: 1.5rem; }
 
+@media (max-width: 39.375em) {
+  /* line 154, sass/layout/_navigation.scss */
+  .logo {
+    display: none; } }
+
 /* line 1, sass/layout/_header.scss */
 .landing__header {
+  position: relative;
   width: 95vw;
-  height: 100vh;
+  height: auto;
+  padding-bottom: 5rem;
   opacity: 0.99;
   background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.274)), url(/images/LLLLLS.avif);
   background-position: center;
@@ -283,6 +327,45 @@ nav a i {
   padding-top: 2rem;
   display: block;
   margin: 0 auto; }
+  @media (max-width: 56.25em) {
+    /* line 1, sass/layout/_header.scss */
+    .landing__header {
+      height: auto;
+      padding-bottom: 3rem; } }
+  @media (max-width: 39.375em) {
+    /* line 1, sass/layout/_header.scss */
+    .landing__header {
+      height: auto;
+      padding-bottom: 3rem; } }
+  /* line 24, sass/layout/_header.scss */
+  .landing__header-description {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem; }
+    @media (max-width: 75em) {
+      /* line 24, sass/layout/_header.scss */
+      .landing__header-description {
+        margin-top: 6rem;
+        height: auto;
+        margin-bottom: 3rem; } }
+    /* line 37, sass/layout/_header.scss */
+    .landing__header-description h2 {
+      font-size: 2.6rem;
+      font-weight: 900;
+      margin-bottom: 2rem; }
+      @media (max-width: 39.375em) {
+        /* line 37, sass/layout/_header.scss */
+        .landing__header-description h2 {
+          font-size: 1.6rem; } }
+    /* line 46, sass/layout/_header.scss */
+    .landing__header-description p {
+      margin-top: 4rem; }
+      /* line 48, sass/layout/_header.scss */
+      .landing__header-description p span {
+        color: blue; }
 
 /* line 1, sass/layout/_footer.scss */
 .landing__footer {
@@ -296,26 +379,31 @@ nav a i {
 .footer {
   display: flex;
   justify-content: space-between; }
-  /* line 12, sass/layout/_footer.scss */
+  @media (max-width: 39.375em) {
+    /* line 8, sass/layout/_footer.scss */
+    .footer {
+      flex-direction: column;
+      margin-bottom: 4rem; } }
+  /* line 16, sass/layout/_footer.scss */
   .footer--menus ul {
     transition: all 1.8s; }
-    /* line 14, sass/layout/_footer.scss */
+    /* line 18, sass/layout/_footer.scss */
     .footer--menus ul li {
       transition: all 1.8s;
       margin: 1.2rem 0; }
-      /* line 17, sass/layout/_footer.scss */
+      /* line 21, sass/layout/_footer.scss */
       .footer--menus ul li a {
         color: #fff;
         font-size: 1.4rem;
         transition: 0.5s ease-in-out; }
-        /* line 22, sass/layout/_footer.scss */
+        /* line 26, sass/layout/_footer.scss */
         .footer--menus ul li a:hover {
           background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
           color: transparent;
           background-clip: text;
           -webkit-background-clip: text;
           background-color: #333; }
-  /* line 34, sass/layout/_footer.scss */
+  /* line 38, sass/layout/_footer.scss */
   .footer--icons i {
     color: #fff;
     font-size: 1.4rem;
@@ -324,7 +412,7 @@ nav a i {
     background-color: #333;
     transition: 0.5s ease-in-out;
     margin: 0 0.5rem; }
-    /* line 42, sass/layout/_footer.scss */
+    /* line 46, sass/layout/_footer.scss */
     .footer--icons i:hover {
       background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
       color: transparent;
@@ -332,145 +420,104 @@ nav a i {
       -webkit-background-clip: text;
       background-color: #333; }
 
-/* line 52, sass/layout/_footer.scss */
+/* line 56, sass/layout/_footer.scss */
 .footer__playlist {
   margin-top: 10rem; }
 
-/* line 55, sass/layout/_footer.scss */
+/* line 59, sass/layout/_footer.scss */
 .footer__create--playlist {
   padding: 4rem 0; }
 
-/* line 2, sass/base/_typography.scss */
-.section__flow-box {
-  padding-top: 1.5rem; }
-  /* line 5, sass/base/_typography.scss */
-  .section__flow-box--img img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    height: 90%; }
-  /* line 12, sass/base/_typography.scss */
-  .section__flow-box--description {
-    margin-top: 8rem;
-    color: #fff; }
-
-/* line 17, sass/base/_typography.scss */
-.section__flow--description {
-  width: 100%; }
-  /* line 19, sass/base/_typography.scss */
-  .section__flow--description p {
-    line-height: 1.5;
-    margin-top: 2rem; }
-
-/* line 26, sass/base/_typography.scss */
-.section__listen--description {
-  color: #fff; }
-  /* line 28, sass/base/_typography.scss */
-  .section__listen--description h3 {
-    padding-top: 10rem;
-    font-size: 2.4rem; }
-  /* line 32, sass/base/_typography.scss */
-  .section__listen--description p {
-    width: 50%;
-    margin-top: 3rem;
-    line-height: 1.5;
-    font-size: 1.4rem; }
-
-/* line 41, sass/base/_typography.scss */
-.section__find-box {
-  padding-top: 5rem; }
-  /* line 43, sass/base/_typography.scss */
-  .section__find-box--description {
-    color: #fff; }
-    /* line 45, sass/base/_typography.scss */
-    .section__find-box--description h3 {
-      margin-top: 8rem;
-      font-size: 2rem; }
-    /* line 49, sass/base/_typography.scss */
-    .section__find-box--description p {
-      font-size: 1.3rem;
-      line-height: 2;
-      margin-top: 2rem; }
-  /* line 56, sass/base/_typography.scss */
-  .section__find-box--img img {
-    display: block;
-    margin: 0 auto;
-    width: 20rem;
-    height: 30rem; }
-
-/* line 64, sass/base/_typography.scss */
+/* line 1, sass/base/_typography.scss */
 .title {
   text-align: center;
   color: #fff;
   font-size: 2.3rem; }
+  @media (max-width: 39.375em) {
+    /* line 1, sass/base/_typography.scss */
+    .title {
+      margin-top: 6rem; } }
+  @media (max-width: 39.375em) {
+    /* line 1, sass/base/_typography.scss */
+    .title {
+      margin-top: 2rem; } }
 
-/* line 69, sass/base/_typography.scss */
+/* line 12, sass/base/_typography.scss */
 .paragraph {
   text-align: center;
   color: #fff;
   font-size: 1.4rem;
   padding: 3rem 0; }
+  @media (max-width: 75em) {
+    /* line 12, sass/base/_typography.scss */
+    .paragraph {
+      padding: 2rem 0; } }
 
-/* line 75, sass/base/_typography.scss */
+/* line 21, sass/base/_typography.scss */
 .comment {
   display: flex;
   justify-content: space-between; }
-  /* line 80, sass/base/_typography.scss */
+  /* line 26, sass/base/_typography.scss */
   .comment__list--1 ul {
     display: flex; }
-    /* line 82, sass/base/_typography.scss */
+    /* line 28, sass/base/_typography.scss */
     .comment__list--1 ul li {
       margin-right: 2rem; }
-      /* line 84, sass/base/_typography.scss */
+      /* line 30, sass/base/_typography.scss */
       .comment__list--1 ul li a {
         color: #fff;
         transition: 0.5s ease-in-out; }
-        /* line 87, sass/base/_typography.scss */
+        /* line 33, sass/base/_typography.scss */
         .comment__list--1 ul li a:hover {
           color: coral; }
-  /* line 95, sass/base/_typography.scss */
+  /* line 41, sass/base/_typography.scss */
   .comment__list--2 select {
     border: none;
     outline: none;
     padding: 0.5rem 1.1rem; }
-  /* line 100, sass/base/_typography.scss */
+  /* line 46, sass/base/_typography.scss */
   .comment__list--2 p {
     text-align: center;
     color: #fff;
     margin-top: 1.1rem; }
+  @media (max-width: 39.375em) {
+    /* line 21, sass/base/_typography.scss */
+    .comment {
+      display: flex;
+      flex-direction: column; } }
 
-/* line 108, sass/base/_typography.scss */
+/* line 58, sass/base/_typography.scss */
 .more {
   color: #fff;
   display: flex;
   justify-content: space-between;
   font-size: 1.6rem;
   margin: 2.6rem 0; }
-  /* line 114, sass/base/_typography.scss */
+  /* line 64, sass/base/_typography.scss */
   .more p {
     font-weight: 900;
     font-size: 1.6rem;
     cursor: pointer;
     transition: 0.5s ease-in-out; }
-    /* line 119, sass/base/_typography.scss */
+    /* line 69, sass/base/_typography.scss */
     .more p:hover {
       background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
       color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
       transform: scale(1.2); }
-  /* line 127, sass/base/_typography.scss */
+  /* line 77, sass/base/_typography.scss */
   .more i {
     cursor: pointer;
     transition: 0.5s ease-in-out; }
-    /* line 130, sass/base/_typography.scss */
+    /* line 80, sass/base/_typography.scss */
     .more i:hover {
       background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
       color: transparent;
       background-clip: text;
       -webkit-background-clip: text; }
 
-/* line 139, sass/base/_typography.scss */
+/* line 89, sass/base/_typography.scss */
 .play img {
   display: block;
   margin: 6rem auto;
@@ -478,65 +525,45 @@ nav a i {
   height: 6rem;
   width: 95vw; }
 
-/* line 150, sass/base/_typography.scss */
+/* line 100, sass/base/_typography.scss */
 .music__podcast div img,
 .music__types div img {
   width: 17rem;
   height: 10rem; }
 
-/* line 157, sass/base/_typography.scss */
-.landing__header-description {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15rem; }
-  /* line 164, sass/base/_typography.scss */
-  .landing__header-description h2 {
-    font-size: 2.6rem;
-    font-weight: 900;
-    margin-bottom: 2rem; }
-  /* line 170, sass/base/_typography.scss */
-  .landing__header-description p {
-    margin-top: 4rem; }
-    /* line 172, sass/base/_typography.scss */
-    .landing__header-description p span {
-      color: blue; }
-
-/* line 178, sass/base/_typography.scss */
+/* line 107, sass/base/_typography.scss */
 .middle {
   margin-left: 9rem; }
 
-/* line 181, sass/base/_typography.scss */
+/* line 110, sass/base/_typography.scss */
 .this__week {
   margin-top: 4rem; }
 
-/* line 185, sass/base/_typography.scss */
+/* line 114, sass/base/_typography.scss */
 .flex1 div {
   text-align: center;
   margin-right: 2rem; }
-  /* line 188, sass/base/_typography.scss */
+  /* line 117, sass/base/_typography.scss */
   .flex1 div p {
     color: #fff;
     font-size: 1.2rem; }
-  /* line 192, sass/base/_typography.scss */
+  /* line 121, sass/base/_typography.scss */
   .flex1 div span {
     color: rgba(240, 248, 255, 0.432); }
 
-/* line 197, sass/base/_typography.scss */
+/* line 126, sass/base/_typography.scss */
 .feature_items {
   margin: 3rem 0; }
 
-/* line 201, sass/base/_typography.scss */
+/* line 130, sass/base/_typography.scss */
 .more div {
   opacity: 0.7;
   display: flex; }
-  /* line 204, sass/base/_typography.scss */
+  /* line 133, sass/base/_typography.scss */
   .more div i {
     margin-right: 2rem; }
 
-/* line 208, sass/base/_typography.scss */
+/* line 137, sass/base/_typography.scss */
 .more select,
 .more input {
   background-color: transparent;
@@ -544,18 +571,18 @@ nav a i {
   border: none;
   opacity: 0.7; }
 
-/* line 216, sass/base/_typography.scss */
+/* line 145, sass/base/_typography.scss */
 .playlist__link {
   margin-top: 1rem;
   transition: all 0.5s ease-in-out; }
-  /* line 219, sass/base/_typography.scss */
+  /* line 148, sass/base/_typography.scss */
   .playlist__link a {
     color: #fff;
     font-size: 1.4rem;
     position: relative;
     margin-right: 1.4rem;
     transition: all 0.5s ease-in-out; }
-    /* line 225, sass/base/_typography.scss */
+    /* line 154, sass/base/_typography.scss */
     .playlist__link a::after {
       transition: all 0.5s ease-in-out;
       position: absolute;
@@ -565,27 +592,27 @@ nav a i {
       width: 0;
       height: 0.2rem;
       background-color: #5f61e3; }
-    /* line 235, sass/base/_typography.scss */
+    /* line 164, sass/base/_typography.scss */
     .playlist__link a:hover::after {
       width: 100%; }
 
-/* line 240, sass/base/_typography.scss */
+/* line 169, sass/base/_typography.scss */
 .heading {
   margin-left: 3rem; }
 
-/* line 244, sass/base/_typography.scss */
+/* line 173, sass/base/_typography.scss */
 .draw {
   width: 100%;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.363);
   margin: 2rem 0; }
 
-/* line 250, sass/base/_typography.scss */
+/* line 179, sass/base/_typography.scss */
 .search__playlist {
   margin: 0;
   margin-top: 2rem; }
 
-/* line 254, sass/base/_typography.scss */
+/* line 183, sass/base/_typography.scss */
 .essential {
   color: #fff;
   border: 1px solid #fff;
@@ -593,102 +620,289 @@ nav a i {
   padding: 0.4rem 2rem;
   font-size: 1.5rem; }
 
-/* line 261, sass/base/_typography.scss */
+/* line 190, sass/base/_typography.scss */
 .add_btn {
   width: 6.5rem;
   text-align: center;
   margin-left: 20rem;
   margin-bottom: 1rem; }
-  /* line 266, sass/base/_typography.scss */
+  /* line 195, sass/base/_typography.scss */
   .add_btn:hover {
     background-image: linear-gradient(#5353e0, #222274); }
 
 /* line 3, sass/pages/_landing.scss */
+.section__flow-box {
+  padding-top: 1.5rem; }
+  @media (max-width: 39.375em) {
+    /* line 3, sass/pages/_landing.scss */
+    .section__flow-box {
+      display: grid;
+      grid-template-columns: repeat(1fr, 2fr); } }
+  @media (max-width: 39.375em) {
+    /* line 3, sass/pages/_landing.scss */
+    .section__flow-box {
+      display: flex;
+      flex-direction: column;
+      padding-top: 0.3rem; } }
+  /* line 15, sass/pages/_landing.scss */
+  .section__flow-box--img img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 90%; }
+    @media (max-width: 75em) {
+      /* line 15, sass/pages/_landing.scss */
+      .section__flow-box--img img {
+        width: 80%; } }
+    @media (max-width: 39.375em) {
+      /* line 15, sass/pages/_landing.scss */
+      .section__flow-box--img img {
+        width: 100%;
+        margin-left: 0; } }
+  /* line 29, sass/pages/_landing.scss */
+  .section__flow-box--description {
+    margin-top: 8rem;
+    color: #fff; }
+    @media (max-width: 39.375em) {
+      /* line 29, sass/pages/_landing.scss */
+      .section__flow-box--description {
+        margin-top: 0; } }
+
+/* line 37, sass/pages/_landing.scss */
+.section__flow--description {
+  width: 100%; }
+  /* line 39, sass/pages/_landing.scss */
+  .section__flow--description p {
+    line-height: 1.5;
+    margin-top: 2rem; }
+
+/* line 46, sass/pages/_landing.scss */
+.section__listen--description {
+  color: #fff; }
+  /* line 48, sass/pages/_landing.scss */
+  .section__listen--description h3 {
+    padding-top: 10rem;
+    font-size: 2.4rem; }
+    @media (max-width: 39.375em) {
+      /* line 48, sass/pages/_landing.scss */
+      .section__listen--description h3 {
+        padding-top: 2rem; } }
+  /* line 55, sass/pages/_landing.scss */
+  .section__listen--description p {
+    width: 50%;
+    margin-top: 3rem;
+    line-height: 1.5;
+    font-size: 1.4rem; }
+
+/* line 64, sass/pages/_landing.scss */
+.section__find-box {
+  padding-top: 5rem; }
+  @media (max-width: 56.25em) {
+    /* line 64, sass/pages/_landing.scss */
+    .section__find-box {
+      padding-top: 0; } }
+  @media (max-width: 39.375em) {
+    /* line 64, sass/pages/_landing.scss */
+    .section__find-box {
+      display: flex;
+      flex-direction: column-reverse; } }
+  /* line 73, sass/pages/_landing.scss */
+  .section__find-box--description {
+    color: #fff; }
+    /* line 75, sass/pages/_landing.scss */
+    .section__find-box--description h3 {
+      margin-top: 8rem;
+      font-size: 2rem; }
+      @media (max-width: 75em) {
+        /* line 75, sass/pages/_landing.scss */
+        .section__find-box--description h3 {
+          margin-top: 2rem; } }
+    /* line 82, sass/pages/_landing.scss */
+    .section__find-box--description p {
+      font-size: 1.3rem;
+      line-height: 2;
+      margin-top: 2rem; }
+  /* line 89, sass/pages/_landing.scss */
+  .section__find-box--img img {
+    display: block;
+    margin: 0 auto;
+    width: 20rem;
+    height: 30rem; }
+    @media (max-width: 75em) {
+      /* line 89, sass/pages/_landing.scss */
+      .section__find-box--img img {
+        height: 20rem;
+        width: 15rem; } }
+    @media (max-width: 56.25em) {
+      /* line 89, sass/pages/_landing.scss */
+      .section__find-box--img img {
+        height: 15rem;
+        width: 10rem;
+        margin-top: 4rem; } }
+
+/* line 108, sass/pages/_landing.scss */
 .section__flow {
   width: 95vw;
-  height: 70vh;
+  height: auto;
   background-color: #161a1a;
   display: block;
-  margin: 0 auto; }
-  /* line 9, sass/pages/_landing.scss */
+  margin: 0 auto;
+  top: 0px; }
+  @media (max-width: 75em) {
+    /* line 108, sass/pages/_landing.scss */
+    .section__flow {
+      height: auto; } }
+  @media (max-width: 39.375em) {
+    /* line 108, sass/pages/_landing.scss */
+    .section__flow {
+      height: auto;
+      padding-bottom: 5rem; } }
+  /* line 129, sass/pages/_landing.scss */
   .section__flow--icon {
     transition: all 0.6s; }
-  /* line 12, sass/pages/_landing.scss */
+  /* line 132, sass/pages/_landing.scss */
   .section__flow-box--img {
     transform: scale(0.7);
     transition: all 0.7s;
     width: 35rem;
     height: 35rem;
     margin-top: 5rem; }
-  /* line 20, sass/pages/_landing.scss */
-  .section__flow:hover .section__flow-box--img {
-    transform: scale(1); }
-  /* line 23, sass/pages/_landing.scss */
-  .section__flow:hover .section__flow--icon {
-    transform: translateX(-1rem); }
+    /* line 139, sass/pages/_landing.scss */
+    .section__flow-box--img:hover .section__flow-box--img {
+      transform: scale(1); }
+    /* line 142, sass/pages/_landing.scss */
+    .section__flow-box--img:hover .section__flow--icon {
+      transform: translateX(-1rem); }
+    @media (max-width: 75em) {
+      /* line 132, sass/pages/_landing.scss */
+      .section__flow-box--img {
+        height: auto; } }
+    @media (max-width: 39.375em) {
+      /* line 132, sass/pages/_landing.scss */
+      .section__flow-box--img {
+        height: 100%;
+        width: 25rem;
+        display: block;
+        margin: 0 auto; }
+        /* line 154, sass/pages/_landing.scss */
+        .section__flow-box--img:hover {
+          transform: scale(0.7);
+          margin-left: 0; } }
 
-/* line 28, sass/pages/_landing.scss */
+/* line 161, sass/pages/_landing.scss */
 .section__listen {
   width: 95vw;
-  height: 60vh;
+  height: auto;
+  padding-bottom: 4rem;
   background-image: url(/images/qqqq.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
   margin: 0 auto; }
+  @media (max-width: 75em) {
+    /* line 161, sass/pages/_landing.scss */
+    .section__listen {
+      height: auto;
+      padding-bottom: 3rem; } }
+  @media (max-width: 39.375em) {
+    /* line 161, sass/pages/_landing.scss */
+    .section__listen {
+      height: auto; } }
 
-/* line 38, sass/pages/_landing.scss */
+/* line 179, sass/pages/_landing.scss */
 .section__find {
   width: 95vw;
-  height: 60vh;
+  height: auto;
+  padding-bottom: 4rem;
   background-color: #161a1a;
   display: block;
   margin: 0 auto; }
-  /* line 44, sass/pages/_landing.scss */
+  /* line 186, sass/pages/_landing.scss */
   .section__find-box--img {
     transform: rotateY(-180deg);
     transition: all 0.6s; }
-  /* line 49, sass/pages/_landing.scss */
+  /* line 191, sass/pages/_landing.scss */
   .section__find-box--img:hover {
     transform: rotateY(0deg); }
 
-/* line 54, sass/pages/_landing.scss */
+/* line 196, sass/pages/_landing.scss */
 .section__premium {
   width: 95vw;
-  height: 100vh;
+  height: 95vh;
   background-color: #161a1a;
   display: block;
   margin: 0 auto;
   padding: 0 10rem;
   overflow: hidden; }
-  /* line 62, sass/pages/_landing.scss */
+  /* line 205, sass/pages/_landing.scss */
   .section__premium-icons {
     padding: 0 6rem;
     margin-top: 4rem; }
+    @media (max-width: 39.375em) {
+      /* line 205, sass/pages/_landing.scss */
+      .section__premium-icons {
+        display: flex;
+        flex-direction: column; } }
+  @media (max-width: 75em) {
+    /* line 196, sass/pages/_landing.scss */
+    .section__premium {
+      height: auto;
+      padding-bottom: 5rem; } }
+  @media (max-width: 56.25em) {
+    /* line 196, sass/pages/_landing.scss */
+    .section__premium {
+      height: auto;
+      padding-bottom: 5rem; } }
+  @media (max-width: 39.375em) {
+    /* line 196, sass/pages/_landing.scss */
+    .section__premium {
+      height: auto;
+      padding: 0;
+      padding-top: 8rem; } }
 
-/* line 69, sass/pages/_landing.scss */
+@media (max-width: 39.375em) {
+  /* line 228, sass/pages/_landing.scss */
+  .icon {
+    display: flex;
+    margin-bottom: 3rem; } }
+
+/* line 233, sass/pages/_landing.scss */
 .icon i {
   transform: scale(0.6);
   transition: all 0.6s;
   margin-bottom: 1rem; }
 
-/* line 77, sass/pages/_landing.scss */
+/* line 241, sass/pages/_landing.scss */
 .icon i:hover {
   transform: scale(0.8);
   box-shadow: #f7f7f7 0px 7px 29px 0px; }
 
-/* line 83, sass/pages/_landing.scss */
+/* line 247, sass/pages/_landing.scss */
 .musicbox--card--1 {
   animation-name: card-1;
   animation-duration: 1.5s;
   animation-iteration-count: 1; }
+  @media (max-width: 75em) {
+    /* line 247, sass/pages/_landing.scss */
+    .musicbox--card--1 {
+      margin-left: 5rem; } }
+  @media (max-width: 39.375em) {
+    /* line 247, sass/pages/_landing.scss */
+    .musicbox--card--1 {
+      display: block;
+      margin-left: 0; } }
 
-/* line 88, sass/pages/_landing.scss */
+/* line 259, sass/pages/_landing.scss */
 .musicbox--card--2 {
   animation-name: card-2;
   animation-duration: 1.5s;
   animation-iteration-count: 1; }
+  @media (max-width: 39.375em) {
+    /* line 259, sass/pages/_landing.scss */
+    .musicbox--card--2 {
+      padding: 1rem;
+      display: block; } }
 
 @keyframes card-1 {
   0% {
@@ -702,10 +916,18 @@ nav a i {
   100% {
     transform: translateX(0); } }
 
-/* line 109, sass/pages/_landing.scss */
+/* line 284, sass/pages/_landing.scss */
 .comment__list--2 select {
   background-color: transparent;
   color: #fff; }
+
+/* line 288, sass/pages/_landing.scss */
+.burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; }
 
 /* line 1, sass/pages/_playlist.scss */
 .section__playlist {
@@ -1582,38 +1804,65 @@ nav a i {
   color: #fff;
   border: 1px solid #fff;
   padding: 2rem;
-  width: 70%;
+  width: 100%;
   height: 30rem;
   position: relative;
   transition: all 0.5s; }
-  /* line 9, sass/components/_card.scss */
+  @media (max-width: 75em) {
+    /* line 1, sass/components/_card.scss */
+    .musicbox--card {
+      width: 80%; } }
+  @media (max-width: 56.25em) {
+    /* line 1, sass/components/_card.scss */
+    .musicbox--card {
+      height: 40vh;
+      display: block;
+      width: 16rem;
+      padding: 0.4rem; } }
+  @media (max-width: 39.375em) {
+    /* line 1, sass/components/_card.scss */
+    .musicbox--card {
+      width: 60%;
+      height: 25rem;
+      text-align: left;
+      padding-left: 2rem;
+      padding-top: 4rem;
+      margin-bottom: 10rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10rem; } }
+  /* line 29, sass/components/_card.scss */
   .musicbox--card h3 {
     font-size: 1.6rem; }
-  /* line 12, sass/components/_card.scss */
+  /* line 32, sass/components/_card.scss */
   .musicbox--card p {
     font-size: 1.6rem;
     margin: 0.8rem 0; }
-    /* line 15, sass/components/_card.scss */
+    /* line 35, sass/components/_card.scss */
     .musicbox--card p span {
       font-size: 1.2rem; }
-  /* line 19, sass/components/_card.scss */
+  /* line 39, sass/components/_card.scss */
   .musicbox--card ul {
     margin-top: 2 rem; }
-    /* line 21, sass/components/_card.scss */
+    /* line 41, sass/components/_card.scss */
     .musicbox--card ul li {
       font-size: 1.2rem;
       margin: 2rem 0; }
-    /* line 25, sass/components/_card.scss */
+      @media (max-width: 56.25em) {
+        /* line 41, sass/components/_card.scss */
+        .musicbox--card ul li {
+          margin: 0.2rem 0; } }
+    /* line 48, sass/components/_card.scss */
     .musicbox--card ul i {
       margin-right: 1.5rem; }
-  /* line 31, sass/components/_card.scss */
+  /* line 54, sass/components/_card.scss */
   .musicbox--card--2 p {
     background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     background-color: #333; }
-  /* line 39, sass/components/_card.scss */
+  /* line 62, sass/components/_card.scss */
   .musicbox--card--2 ul i {
     background-image: linear-gradient(to bottom, #2da7f8, #5f61e3);
     color: transparent;
@@ -1621,9 +1870,18 @@ nav a i {
     -webkit-background-clip: text;
     background-color: #333; }
 
-/* line 49, sass/components/_card.scss */
+/* line 72, sass/components/_card.scss */
 .section__premium--cards {
   padding: 0 10rem; }
+  @media (max-width: 75em) {
+    /* line 72, sass/components/_card.scss */
+    .section__premium--cards {
+      padding: 0; } }
+  @media (max-width: 39.375em) {
+    /* line 72, sass/components/_card.scss */
+    .section__premium--cards {
+      display: flex;
+      flex-direction: column; } }
 
 /* line 1, sass/components/_buttons.scss */
 .btn {
@@ -1635,11 +1893,28 @@ nav a i {
   padding: 1.2rem 1.4rem;
   border-radius: 2rem;
   transition: 0.5s; }
-  /* line 10, sass/components/_buttons.scss */
+  @media (max-width: 75em) {
+    /* line 1, sass/components/_buttons.scss */
+    .btn {
+      bottom: -5rem;
+      padding: 0.8rem 1.4rem; } }
+  @media (max-width: 56.25em) {
+    /* line 1, sass/components/_buttons.scss */
+    .btn {
+      bottom: -3.5rem;
+      padding: 0.2rem 1rem; } }
+  @media (max-width: 39.375em) {
+    /* line 1, sass/components/_buttons.scss */
+    .btn {
+      padding: 0.6rem 1rem;
+      bottom: -7.5rem;
+      left: 1rem;
+      border-radius: 0.8rem; } }
+  /* line 24, sass/components/_buttons.scss */
   .btn:hover {
     background-image: linear-gradient(to bottom, #2da7f8, #5f61e3); }
 
-/* line 14, sass/components/_buttons.scss */
+/* line 28, sass/components/_buttons.scss */
 .header-btn {
   color: #fff;
   font-size: 1.4rem;
@@ -1647,11 +1922,17 @@ nav a i {
   padding: 0.6rem 1.4rem;
   border-radius: 2rem;
   transition: 0.5s; }
-  /* line 23, sass/components/_buttons.scss */
+  @media (max-width: 39.375em) {
+    /* line 28, sass/components/_buttons.scss */
+    .header-btn {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem; } }
+  /* line 40, sass/components/_buttons.scss */
   .header-btn:hover {
     background-image: linear-gradient(to right, #2da7f8, #5f61e3); }
 
-/* line 27, sass/components/_buttons.scss */
+/* line 44, sass/components/_buttons.scss */
 .podcast_btn {
   position: relative;
   padding: 1rem5;
@@ -1663,7 +1944,7 @@ nav a i {
   margin-top: -3rem;
   transition: all 0.5s ease-in-out; }
 
-/* line 38, sass/components/_buttons.scss */
+/* line 55, sass/components/_buttons.scss */
 .btn_universal {
   color: #fff;
   text-transform: uppercase;
@@ -1676,17 +1957,17 @@ nav a i {
   animation-name: btn_universal__animation;
   animation-duration: 2s;
   animation-iteration-count: 1; }
-  /* line 50, sass/components/_buttons.scss */
+  /* line 67, sass/components/_buttons.scss */
   .btn_universal:hover {
     background-image: linear-gradient(to right, #2da7f8, #5f61e3); }
 
-/* line 54, sass/components/_buttons.scss */
+/* line 71, sass/components/_buttons.scss */
 .artist_btn {
   display: block;
   margin: 4rem auto;
   width: 20rem;
   text-align: center; }
-  /* line 59, sass/components/_buttons.scss */
+  /* line 76, sass/components/_buttons.scss */
   .artist_btn--2 {
     margin-bottom: 8rem; }
 
@@ -1697,3 +1978,64 @@ nav a i {
     transform: translateX(5rem); }
   100% {
     transform: translateX(0); } }
+
+/* line 93, sass/components/_buttons.scss */
+.navigation__icon {
+  transition: all 0.7s;
+  position: absolute;
+  top: 2.2rem;
+  right: 1rem;
+  width: 3rem;
+  height: 4px;
+  background-color: #0dc3db; }
+  /* line 101, sass/components/_buttons.scss */
+  .navigation__icon::after {
+    width: 100%;
+    height: 4px;
+    background-color: #0dc3db;
+    content: "";
+    position: absolute;
+    top: 1rem; }
+  /* line 109, sass/components/_buttons.scss */
+  .navigation__icon::before {
+    width: 100%;
+    height: 4px;
+    background-color: #0dc3db;
+    content: "";
+    position: absolute;
+    top: -1rem; }
+
+/* line 119, sass/components/_buttons.scss */
+.navigation__checkbox--label {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: transparent;
+  border-radius: 50%;
+  position: fixed;
+  display: none;
+  z-index: 200; }
+  @media (max-width: 39.375em) {
+    /* line 119, sass/components/_buttons.scss */
+    .navigation__checkbox--label {
+      display: block; } }
+
+/* line 134, sass/components/_buttons.scss */
+.navigation__checkbox--input {
+  display: none; }
+  /* line 137, sass/components/_buttons.scss */
+  .navigation__checkbox--input:checked ~ .container .landing__nav {
+    opacity: 1;
+    transform: scale(1); }
+  /* line 143, sass/components/_buttons.scss */
+  .navigation__checkbox--input:checked ~ .navigation__checkbox--label .navigation__icon::after {
+    transform: rotate(65deg);
+    top: 0; }
+  /* line 147, sass/components/_buttons.scss */
+  .navigation__checkbox--input:checked ~ .navigation__checkbox--label .navigation__icon {
+    transform: rotate(58deg); }
+  /* line 150, sass/components/_buttons.scss */
+  .navigation__checkbox--input:checked ~ .navigation__checkbox--label .navigation__icon::before {
+    display: none; }

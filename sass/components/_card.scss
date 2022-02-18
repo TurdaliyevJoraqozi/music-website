@@ -2,10 +2,30 @@
   color: $color-white;
   border: 1px solid $color-white;
   padding: 2rem;
-  width: 70%;
+  width: 100%;
   height: 30rem;
   position: relative;
   transition: all 0.5s;
+  @include respons(tab-land) {
+    width: 80%;
+  }
+  @include respons(tab-port) {
+    height: 40vh;
+    display: block;
+    width: 16rem;
+    padding: 0.4rem;
+  }
+  @include respons(phone) {
+    width: 60%;
+    height: 25rem;
+    text-align: left;
+    padding-left: 2rem;
+    padding-top: 4rem;
+    margin-bottom: 10rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+  }
   h3 {
     font-size: 1.6rem;
   }
@@ -21,6 +41,9 @@
     li {
       font-size: 1.2rem;
       margin: 2rem 0;
+      @include respons(tab-port) {
+        margin: 0.2rem 0;
+      }
     }
     i {
       margin-right: 1.5rem;
@@ -48,4 +71,11 @@
 }
 .section__premium--cards {
   padding: 0 10rem;
+  @include respons(tab-land) {
+    padding: 0;
+  }
+  @include respons(phone) {
+    display: flex;
+    flex-direction: column;
+  }
 }

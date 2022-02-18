@@ -8,6 +8,10 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  @include respons(phone) {
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
   &--menus {
     ul {
       transition: all 1.8s;

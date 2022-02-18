@@ -21,8 +21,16 @@
   </head>
   <body>
     <header class="landing__header" id="hero">
+      <input
+      class="navigation__checkbox--input"
+      type="checkbox"
+      id="navigation__checkbox"
+    />
+    <label class="navigation__checkbox--label" for="navigation__checkbox"
+      ><span class="navigation__icon"></span>
+    </label>
       <nav class="container">
-        <div class="landing__nav">
+        <div class="landing__nav" id="landing-nav-id">
           <div class="logo">
             <img src=".//images/landing__logo.PNG" alt="landing__logo.PNG" />
           </div>
@@ -51,7 +59,11 @@
         </div>
         <p>1-month free trial <span> $7.99</span>/month after</p>
       </div>
+   
+      
+        
     </header>
+   
     <main>
       <section class="section__flow">
         <div class="section__flow-box grid2 container">
@@ -324,5 +336,6 @@
       </div>
     </section>
    </div>
+
   </body>
 </html>
